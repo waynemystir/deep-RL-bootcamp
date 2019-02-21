@@ -18,6 +18,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 from collections import deque
 
+import pdb
 import time
 import chainer as C
 import chainer.functions as F
@@ -64,6 +65,10 @@ class Adam(object):
         self.t += 1
         a = self.stepsize * \
             np.sqrt(1 - self.beta2 ** self.t) / (1 - self.beta1 ** self.t)
+        print("beta2={}".format(self.beta2))
+        print("v={}".format(self.v))
+        print("g={}".format(g))
+        pdb.set_trace()
         self.v = self.beta2 * self.v + (1 - self.beta2) * (g * g)
         self.m = self.beta1 * self.m + (1 - self.beta1) * g
         step = - a * self.m / (np.sqrt(self.v) + self.epsilon)
@@ -148,7 +153,7 @@ class DQN(object):
     def __init__(self, env, get_obs_dim, get_act_dim, obs_preprocessor, replay_buffer, q_dim_hid,
                  opt_batch_size, discount, initial_step, max_steps, learning_start_itr, target_q_update_freq,
                  train_q_freq,
-                 log_freq, double_q, final_eps, initial_eps, fraction_eps, render):
+                 log_freq, double_q, final_eps, initial_eps, fraction_eps, render, prnt_q_params=False):
         self._env = env
         self._get_obs_dim = get_obs_dim
         self._get_act_dim = get_act_dim
@@ -173,6 +178,18 @@ class DQN(object):
         self._q = NN(**nn_args)
         # Target Q-function, Q(s,a,\theta')
         self._qt = NN(**nn_args)
+
+        if prnt_q_params:
+            q_params_w, _ = self._q.get_params()
+            print("q-network number of layers: {}".format(1+len(q_params_w)))
+            for i in range(len(q_params_w)):
+                print("q_params_w[{}].shape={}".format(i, q_params_w[i].data.shape))
+
+            q_params_w, _ = self._qt.get_params()
+            print("qt-network number of layers: {}".format(1+len(q_params_w)))
+            for i in range(len(q_params_w)):
+                print("q_params_w[{}].shape={}".format(i, q_params_w[i].data.shape))
+
         self.lst_adam = [Adam(var.shape, stepsize=1e-4)
                          for var in self._q.train_vars]
         self.exploration = LinearSchedule(
@@ -190,7 +207,7 @@ class DQN(object):
         else:
             return rng.randint(0, self._act_dim)
 
-    def compute_q_learning_loss(self, l_obs, l_act, l_rew, l_next_obs, l_done):
+    def compute_q_learning_loss(self, l_obs, l_act, l_rew, l_next_obs, l_done, prnt_data=False):
         """
         :param l_obs: A chainer variable holding a list of observations. Should be of shape N * |S|.
         :param l_act: A chainer variable holding a list of actions. Should be of shape N.
@@ -206,6 +223,135 @@ class DQN(object):
         # Hint3: You might also find https://docs.chainer.org/en/stable/reference/generated/chainer.functions.select_item.html useful
         loss = C.Variable(np.array([0.]))  # TODO: replace this line
         "*** YOUR CODE HERE ***"
+        # The documentation in this function is wrong.
+        # The arguments are not chainer variables.
+        # The arguments are numpy arrays.
+        # Also, for completeness:
+        # N is the number of observations.
+        # Each observation in l_obs is a 1-hot vector,
+        # where 1 indicates the state at the observation.
+        # Also refer to the two less efficient functions below.
+        if prnt_data:
+            print("typ(l_obs)={}  shp(l_obs)={}".format(type(l_obs), l_obs.shape))
+            print("typ(l_act)={}  shp(l_act)={}".format(type(l_act), l_act.shape))
+            print("typ(l_rew)={}  shp(l_rew)={}".format(type(l_rew), l_rew.shape))
+            print("typ(l_next_obs)={}  shp(l_next_obs)={}".format(type(l_next_obs), l_next_obs.shape))
+            print("typ(l_done)={}  shp(l_done)={}".format(type(l_done), l_done.shape))
+
+        y = l_rew.copy()
+
+        obs = self._obs_preprocessor(l_next_obs)
+        qtvs = self._qt.forward(obs)
+
+        y += self._discount * np.where(l_done==0, np.max(qtvs.data, axis=1), 0.)
+
+        obs = self._obs_preprocessor(l_obs)
+        qvs = self._q.forward(obs)
+
+        tse = ( y - qvs.data[np.arange(len(qvs.data)), l_act] )**2
+
+        return C.Variable(np.array( np.mean(tse) ))
+
+    def compute_q_learning_loss_kinda_efficient(self, l_obs, l_act, l_rew, l_next_obs, l_done, prnt_data=False):
+        """
+        :param l_obs: A chainer variable holding a list of observations. Should be of shape N * |S|.
+        :param l_act: A chainer variable holding a list of actions. Should be of shape N.
+        :param l_rew: A chainer variable holding a list of rewards. Should be of shape N.
+        :param l_next_obs: A chainer variable holding a list of observations at the next time step. Should be of
+        shape N * |S|.
+        :param l_done: A chainer variable holding a list of binary values (indicating whether episode ended after this
+        time step). Should be of shape N.
+        :return: A chainer variable holding a scalar loss.
+        """
+        # Hint: You may want to make use of the following fields: self._discount, self._q, self._qt
+        # Hint2: Q-function can be called by self._q.forward(argument)
+        # Hint3: You might also find https://docs.chainer.org/en/stable/reference/generated/chainer.functions.select_item.html useful
+        loss = C.Variable(np.array([0.]))  # TODO: replace this line
+        "*** YOUR CODE HERE ***"
+        # The documentation in this function is wrong.
+        # The arguments are not chainer variables.
+        # The arguments are numpy arrays.
+        # Also, for completeness:
+        # N is the number of observations.
+        # Each observation in l_obs is a 1-hot vector,
+        # where 1 indicates the state at the observation.
+        if prnt_data:
+            print("typ(l_obs)={}  shp(l_obs)={}".format(type(l_obs), l_obs.shape))
+            print("typ(l_act)={}  shp(l_act)={}".format(type(l_act), l_act.shape))
+            print("typ(l_rew)={}  shp(l_rew)={}".format(type(l_rew), l_rew.shape))
+            print("typ(l_next_obs)={}  shp(l_next_obs)={}".format(type(l_next_obs), l_next_obs.shape))
+            print("typ(l_done)={}  shp(l_done)={}".format(type(l_done), l_done.shape))
+
+        y = l_rew.copy()
+        tse = np.zeros((len(y),))
+
+        obs = self._obs_preprocessor(l_next_obs)
+        qtvs = self._qt.forward(obs)
+
+        obs = self._obs_preprocessor(l_obs)
+        qvs = self._q.forward(obs)
+#        qvs = qvs.data.T
+#        qvs = np.array([qvs[a] for a in l_act])
+
+#        for j in range(len(l_obs)):
+#            if not l_done[j]:
+#                y[j] += self._discount * F.max(qtvs[j]).data
+#            tse[j] = (y[j] - qvs[j,j] )**2
+
+        for j, (a, sp, d) in enumerate(zip(l_act, l_next_obs, l_done)):
+            if not d:
+                y[j] += self._discount * F.max(qtvs[j]).data
+            tse[j] = (y[j] - qvs.data[j,a] )**2
+
+        loss.data[0] = np.mean(tse)
+        return loss
+
+    def compute_q_learning_loss_least_efficient(self, l_obs, l_act, l_rew, l_next_obs, l_done, prnt_data=False):
+        """
+        :param l_obs: A chainer variable holding a list of observations. Should be of shape N * |S|.
+        :param l_act: A chainer variable holding a list of actions. Should be of shape N.
+        :param l_rew: A chainer variable holding a list of rewards. Should be of shape N.
+        :param l_next_obs: A chainer variable holding a list of observations at the next time step. Should be of
+        shape N * |S|.
+        :param l_done: A chainer variable holding a list of binary values (indicating whether episode ended after this
+        time step). Should be of shape N.
+        :return: A chainer variable holding a scalar loss.
+        """
+        # Hint: You may want to make use of the following fields: self._discount, self._q, self._qt
+        # Hint2: Q-function can be called by self._q.forward(argument)
+        # Hint3: You might also find https://docs.chainer.org/en/stable/reference/generated/chainer.functions.select_item.html useful
+        loss = C.Variable(np.array([0.]))  # TODO: replace this line
+        "*** YOUR CODE HERE ***"
+        # The documentation in this function is wrong.
+        # The arguments are not chainer variables.
+        # The arguments are numpy arrays.
+        # Also, for completeness:
+        # N is the number of observations.
+        # Each observation in l_obs is a 1-hot vector,
+        # where 1 indicates the state at the observation.
+        if prnt_data:
+            print("typ(l_obs)={}  shp(l_obs)={}".format(type(l_obs), l_obs.shape))
+            print("typ(l_act)={}  shp(l_act)={}".format(type(l_act), l_act.shape))
+            print("typ(l_rew)={}  shp(l_rew)={}".format(type(l_rew), l_rew.shape))
+            print("typ(l_next_obs)={}  shp(l_next_obs)={}".format(type(l_next_obs), l_next_obs.shape))
+            print("typ(l_done)={}  shp(l_done)={}".format(type(l_done), l_done.shape))
+
+        y = l_rew.copy()
+        tse = np.zeros((len(y),))
+
+        for j, (s, a, sp, d) in enumerate(zip(l_obs, l_act, l_next_obs, l_done)):
+
+            obs = self._obs_preprocessor(sp)
+            qtv_sp = self._qt.forward(obs[np.newaxis, :]).data.flatten()
+
+            obs = self._obs_preprocessor(s)
+            qv_s = self._q.forward(obs[np.newaxis, :]).data.flatten()
+
+            if not d:
+                y[j] += self._discount * np.max(qtv_sp)
+            tse[j] = ( y[j] - qv_s.data[a] )**2
+
+        loss.data[0] = np.mean(tse)
         return loss
 
     def compute_double_q_learning_loss(self, l_obs, l_act, l_rew, l_next_obs, l_done):
@@ -241,7 +387,9 @@ class DQN(object):
             var.cleargrad()
         loss.backward()
         for var, adam in zip(self._q.train_vars, self.lst_adam):
+            pdb.set_trace()
             var.data += adam.step(var.grad)
+            pdb.set_trace()
         return loss.data
 
     def _update_target_q(self):
@@ -397,7 +545,12 @@ def main(env_id, double, render):
         # Logging
         log_freq=log_freq,
         render=render,
+        prnt_q_params=True
     )
+
+    print("dqn._target_q_update_freq={}".format(dqn._target_q_update_freq))
+    print("dqn._train_q_freq={}".format(dqn._train_q_freq))
+    print("dqn._log_freq={}".format(dqn._log_freq))
 
     if env_id == 'Pong-ram-v0':
         # Warm start Q-function
@@ -418,7 +571,7 @@ def main(env_id, double, render):
         )
         if not double:
             tgt = np.array([1.909377098083496], dtype=np.float32)
-            actual_var = dqn.compute_q_learning_loss(**test_args)
+            actual_var = dqn.compute_q_learning_loss(**test_args, prnt_data=True)
             test_name = "compute_q_learning_loss"
             assert isinstance(
                 actual_var, C.Variable), "%s should return a Chainer variable" % test_name
