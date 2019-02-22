@@ -18,7 +18,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 from collections import deque
 
-import pdb
 import time
 import chainer as C
 import chainer.functions as F
@@ -65,10 +64,6 @@ class Adam(object):
         self.t += 1
         a = self.stepsize * \
             np.sqrt(1 - self.beta2 ** self.t) / (1 - self.beta1 ** self.t)
-        print("beta2={}".format(self.beta2))
-        print("v={}".format(self.v))
-        print("g={}".format(g))
-        pdb.set_trace()
         self.v = self.beta2 * self.v + (1 - self.beta2) * (g * g)
         self.m = self.beta1 * self.m + (1 - self.beta1) * g
         step = - a * self.m / (np.sqrt(self.v) + self.epsilon)
@@ -230,7 +225,11 @@ class DQN(object):
         # N is the number of observations.
         # Each observation in l_obs is a 1-hot vector,
         # where 1 indicates the state at the observation.
-        # Also refer to the two less efficient functions below.
+        # Also note that the two functions below this one
+        # perform similarly to this function. Each passes
+        # the preliminary test below. However each will
+        # fail when training because Chainer's loss.backward()
+        # requires that the loss consist of C.Variable
         if prnt_data:
             print("typ(l_obs)={}  shp(l_obs)={}".format(type(l_obs), l_obs.shape))
             print("typ(l_act)={}  shp(l_act)={}".format(type(l_act), l_act.shape))
@@ -248,9 +247,9 @@ class DQN(object):
         obs = self._obs_preprocessor(l_obs)
         qvs = self._q.forward(obs)
 
-        tse = ( y - qvs.data[np.arange(len(qvs.data)), l_act] )**2
+        loss = F.mean( F.square( y - F.select_item(qvs, l_act) ) )
 
-        return C.Variable(np.array( np.mean(tse) ))
+        return loss
 
     def compute_q_learning_loss_kinda_efficient(self, l_obs, l_act, l_rew, l_next_obs, l_done, prnt_data=False):
         """
@@ -387,9 +386,7 @@ class DQN(object):
             var.cleargrad()
         loss.backward()
         for var, adam in zip(self._q.train_vars, self.lst_adam):
-            pdb.set_trace()
             var.data += adam.step(var.grad)
-            pdb.set_trace()
         return loss.data
 
     def _update_target_q(self):
