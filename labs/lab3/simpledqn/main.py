@@ -216,7 +216,7 @@ class DQN(object):
         # Hint: You may want to make use of the following fields: self._discount, self._q, self._qt
         # Hint2: Q-function can be called by self._q.forward(argument)
         # Hint3: You might also find https://docs.chainer.org/en/stable/reference/generated/chainer.functions.select_item.html useful
-        loss = C.Variable(np.array([0.]))  # TODO: replace this line
+        # loss = C.Variable(np.array([0.]))  # TODO: replace this line
         "*** YOUR CODE HERE ***"
         # The documentation in this function is wrong.
         # The arguments are not chainer variables.
@@ -225,11 +225,50 @@ class DQN(object):
         # N is the number of observations.
         # Each observation in l_obs is a 1-hot vector,
         # where 1 indicates the state at the observation.
-        # Also note that the two functions below this one
-        # perform similarly to this function. Each passes
-        # the preliminary test below. However each will
-        # fail when training because Chainer's loss.backward()
-        # requires that the loss consist of C.Variable
+        # Also note that my original code can be found
+        # in the function following this one. And below
+        # that can be found an inefficient, but more
+        # intuitive, approach.
+        if prnt_data:
+            print("typ(l_obs)={}  shp(l_obs)={}".format(type(l_obs), l_obs.shape))
+            print("typ(l_act)={}  shp(l_act)={}".format(type(l_act), l_act.shape))
+            print("typ(l_rew)={}  shp(l_rew)={}".format(type(l_rew), l_rew.shape))
+            print("typ(l_next_obs)={}  shp(l_next_obs)={}".format(type(l_next_obs), l_next_obs.shape))
+            print("typ(l_done)={}  shp(l_done)={}".format(type(l_done), l_done.shape))
+
+        y = l_rew + self._discount * F.max(self._qt.forward(l_next_obs), axis=1) * (1 - l_done)
+        q_s_a = F.select_item(self._q.forward(l_obs), l_act)
+        return F.mean_squared_error(y, q_s_a)
+
+    def compute_q_learning_loss_orig(self, l_obs, l_act, l_rew, l_next_obs, l_done, prnt_data=False):
+        """
+        :param l_obs: A chainer variable holding a list of observations. Should be of shape N * |S|.
+        :param l_act: A chainer variable holding a list of actions. Should be of shape N.
+        :param l_rew: A chainer variable holding a list of rewards. Should be of shape N.
+        :param l_next_obs: A chainer variable holding a list of observations at the next time step. Should be of
+        shape N * |S|.
+        :param l_done: A chainer variable holding a list of binary values (indicating whether episode ended after this
+        time step). Should be of shape N.
+        :return: A chainer variable holding a scalar loss.
+        """
+        # Hint: You may want to make use of the following fields: self._discount, self._q, self._qt
+        # Hint2: Q-function can be called by self._q.forward(argument)
+        # Hint3: You might also find https://docs.chainer.org/en/stable/reference/generated/chainer.functions.select_item.html useful
+        # loss = C.Variable(np.array([0.]))  # TODO: replace this line
+        "*** YOUR CODE HERE ***"
+        # The documentation in this function is wrong.
+        # The arguments are not chainer variables.
+        # The arguments are numpy arrays.
+        # Also, for completeness:
+        # N is the number of observations.
+        # Each observation in l_obs is a 1-hot vector,
+        # where 1 indicates the state at the observation.
+        # Also note that the next function below is more
+        # intuitive but much less efficient than this one.
+        # Also, it might fail when training because
+        # Chainer's loss.backward() expects the loss to
+        # consist of a C.Variable on which it will compute
+        # the gradient.
         if prnt_data:
             print("typ(l_obs)={}  shp(l_obs)={}".format(type(l_obs), l_obs.shape))
             print("typ(l_act)={}  shp(l_act)={}".format(type(l_act), l_act.shape))
@@ -251,61 +290,7 @@ class DQN(object):
 
         return loss
 
-    def compute_q_learning_loss_kinda_efficient(self, l_obs, l_act, l_rew, l_next_obs, l_done, prnt_data=False):
-        """
-        :param l_obs: A chainer variable holding a list of observations. Should be of shape N * |S|.
-        :param l_act: A chainer variable holding a list of actions. Should be of shape N.
-        :param l_rew: A chainer variable holding a list of rewards. Should be of shape N.
-        :param l_next_obs: A chainer variable holding a list of observations at the next time step. Should be of
-        shape N * |S|.
-        :param l_done: A chainer variable holding a list of binary values (indicating whether episode ended after this
-        time step). Should be of shape N.
-        :return: A chainer variable holding a scalar loss.
-        """
-        # Hint: You may want to make use of the following fields: self._discount, self._q, self._qt
-        # Hint2: Q-function can be called by self._q.forward(argument)
-        # Hint3: You might also find https://docs.chainer.org/en/stable/reference/generated/chainer.functions.select_item.html useful
-        loss = C.Variable(np.array([0.]))  # TODO: replace this line
-        "*** YOUR CODE HERE ***"
-        # The documentation in this function is wrong.
-        # The arguments are not chainer variables.
-        # The arguments are numpy arrays.
-        # Also, for completeness:
-        # N is the number of observations.
-        # Each observation in l_obs is a 1-hot vector,
-        # where 1 indicates the state at the observation.
-        if prnt_data:
-            print("typ(l_obs)={}  shp(l_obs)={}".format(type(l_obs), l_obs.shape))
-            print("typ(l_act)={}  shp(l_act)={}".format(type(l_act), l_act.shape))
-            print("typ(l_rew)={}  shp(l_rew)={}".format(type(l_rew), l_rew.shape))
-            print("typ(l_next_obs)={}  shp(l_next_obs)={}".format(type(l_next_obs), l_next_obs.shape))
-            print("typ(l_done)={}  shp(l_done)={}".format(type(l_done), l_done.shape))
-
-        y = l_rew.copy()
-        tse = np.zeros((len(y),))
-
-        obs = self._obs_preprocessor(l_next_obs)
-        qtvs = self._qt.forward(obs)
-
-        obs = self._obs_preprocessor(l_obs)
-        qvs = self._q.forward(obs)
-#        qvs = qvs.data.T
-#        qvs = np.array([qvs[a] for a in l_act])
-
-#        for j in range(len(l_obs)):
-#            if not l_done[j]:
-#                y[j] += self._discount * F.max(qtvs[j]).data
-#            tse[j] = (y[j] - qvs[j,j] )**2
-
-        for j, (a, sp, d) in enumerate(zip(l_act, l_next_obs, l_done)):
-            if not d:
-                y[j] += self._discount * F.max(qtvs[j]).data
-            tse[j] = (y[j] - qvs.data[j,a] )**2
-
-        loss.data[0] = np.mean(tse)
-        return loss
-
-    def compute_q_learning_loss_least_efficient(self, l_obs, l_act, l_rew, l_next_obs, l_done, prnt_data=False):
+    def compute_q_learning_loss_inefficient(self, l_obs, l_act, l_rew, l_next_obs, l_done, prnt_data=False):
         """
         :param l_obs: A chainer variable holding a list of observations. Should be of shape N * |S|.
         :param l_act: A chainer variable holding a list of actions. Should be of shape N.
@@ -369,6 +354,26 @@ class DQN(object):
         # Hint3: You might also find https://docs.chainer.org/en/stable/reference/generated/chainer.functions.select_item.html useful
         loss = C.Variable(np.array([0.]))  # TODO: replace this line
         "*** YOUR CODE HERE ***"
+
+        #y = l_rew.copy()
+
+        obs = self._obs_preprocessor(l_next_obs)
+        qvs = self._q.forward(obs)
+
+        #w1 = np.argmax(qvs.data, axis=1)
+        #w2 = self._qt.forward(l_next_obs).data
+        #w3 = w2[np.arange(len(w1)), w1]
+        #y += self._discount * np.where(l_done==0, w3, 0.)
+
+        am_qvs = F.argmax(qvs, axis=1)
+        qvts = self._qt.forward(obs)
+        y = l_rew.astype(np.float32) + self._discount * np.where(l_done==0, F.select_item(qvts, am_qvs).data, 0.)
+        #print("y-type={}".format(type(y)))
+
+        obs = self._obs_preprocessor(l_obs)
+        qvs = self._q.forward(obs)
+
+        loss = F.mean( F.square( y - F.select_item(qvs, l_act) ) )
         return loss
 
     def train_q(self, l_obs, l_act, l_rew, l_next_obs, l_done):
@@ -568,7 +573,7 @@ def main(env_id, double, render):
         )
         if not double:
             tgt = np.array([1.909377098083496], dtype=np.float32)
-            actual_var = dqn.compute_q_learning_loss(**test_args, prnt_data=True)
+            actual_var = dqn.compute_q_learning_loss_inefficient(**test_args, prnt_data=True)
             test_name = "compute_q_learning_loss"
             assert isinstance(
                 actual_var, C.Variable), "%s should return a Chainer variable" % test_name
