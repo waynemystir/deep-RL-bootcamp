@@ -263,12 +263,15 @@ class DQN(object):
         # N is the number of observations.
         # Each observation in l_obs is a 1-hot vector,
         # where 1 indicates the state at the observation.
-        # Also note that the next function below is more
-        # intuitive but much less efficient than this one.
-        # Also, it might fail when training because
-        # Chainer's loss.backward() expects the loss to
-        # consist of a C.Variable on which it will compute
-        # the gradient.
+        # Also note that the next function below this one
+        # is more intuitive but much less efficient than
+        # this one. Also, the next function will fail when
+        # training because Chainer's loss.backward()
+        # expects the loss to consist of the C.Variable
+        # (or its parent, grandparent, etc C.Variable) on
+        # which it will compute the gradient. In this
+        # function, the C.Variable qvs contains the
+        # C.Variables W and b that are used in NN.forward()
         if prnt_data:
             print("typ(l_obs)={}  shp(l_obs)={}".format(type(l_obs), l_obs.shape))
             print("typ(l_act)={}  shp(l_act)={}".format(type(l_act), l_act.shape))
@@ -352,29 +355,13 @@ class DQN(object):
         # Hint: You may want to make use of the following fields: self._discount, self._q, self._qt
         # Hint2: Q-function can be called by self._q.forward(argument)
         # Hint3: You might also find https://docs.chainer.org/en/stable/reference/generated/chainer.functions.select_item.html useful
-        loss = C.Variable(np.array([0.]))  # TODO: replace this line
+        # loss = C.Variable(np.array([0.]))  # TODO: replace this line
         "*** YOUR CODE HERE ***"
 
-        #y = l_rew.copy()
-
-        obs = self._obs_preprocessor(l_next_obs)
-        qvs = self._q.forward(obs)
-
-        #w1 = np.argmax(qvs.data, axis=1)
-        #w2 = self._qt.forward(l_next_obs).data
-        #w3 = w2[np.arange(len(w1)), w1]
-        #y += self._discount * np.where(l_done==0, w3, 0.)
-
-        am_qvs = F.argmax(qvs, axis=1)
-        qvts = self._qt.forward(obs)
-        y = l_rew.astype(np.float32) + self._discount * np.where(l_done==0, F.select_item(qvts, am_qvs).data, 0.)
-        #print("y-type={}".format(type(y)))
-
-        obs = self._obs_preprocessor(l_obs)
-        qvs = self._q.forward(obs)
-
-        loss = F.mean( F.square( y - F.select_item(qvs, l_act) ) )
-        return loss
+        argmax_q_sp_ap = F.argmax(self._q.forward(l_next_obs), axis=1)
+        y = l_rew + self._discount * F.select_item(self._qt.forward(l_next_obs), argmax_q_sp_ap) * (1 - l_done)
+        q_s_a = F.select_item(self._q.forward(l_obs), l_act)
+        return F.mean_squared_error(y, q_s_a)
 
     def train_q(self, l_obs, l_act, l_rew, l_next_obs, l_done):
         """Update Q-value function by sampling from the replay buffer."""
