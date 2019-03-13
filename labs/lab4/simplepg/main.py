@@ -48,6 +48,8 @@ def point_get_grad_logp_action(theta, ob, action):
     """
     grad = np.zeros_like(theta)
     "*** YOUR CODE HERE ***"
+    ob_1 = include_bias(ob)
+    grad = np.outer(action - theta.dot(ob_1), ob_1)
     return grad
 
 
@@ -114,6 +116,11 @@ def cartpole_get_grad_logp_action(theta, ob, action):
     """
     grad = np.zeros_like(theta)
     "*** YOUR CODE HERE ***"
+    ob_1 = include_bias(ob)
+    e_a = np.zeros((theta.shape[0],))
+    e_a[action] = 1
+    probs = softmax(theta.dot(ob_1))
+    grad = np.outer(e_a - probs, ob_1)
     return grad
 
 
@@ -248,6 +255,8 @@ def main(env_id, batch_size, discount, learning_rate, n_itrs, render, use_baseli
                     R_t = 0.
                     pg_theta = np.zeros_like(theta)
                     "*** YOUR CODE HERE ***"
+                    R_t = r_t + discount * R_tplus1
+                    pg_theta = get_grad_logp_action(theta, s_t, a_t) * (R_t - b_t)
                     return R_t, pg_theta
 
                 # Test the implementation, but only once
@@ -279,6 +288,7 @@ def main(env_id, batch_size, discount, learning_rate, n_itrs, render, use_baseli
             baselines = np.zeros(len(all_returns))
             for t in range(len(all_returns)):
                 "*** YOUR CODE HERE ***"
+                baselines[t] = 0. if len(all_returns[t]) == 0 else np.mean(all_returns[t])
             return baselines
 
         if use_baseline:
