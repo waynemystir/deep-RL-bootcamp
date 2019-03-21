@@ -319,15 +319,10 @@ def main(env_id, batch_size, discount, learning_rate, n_itrs, render, use_baseli
                 "*** YOUR CODE HERE ***"
                 # this is an intuitive but very inefficient implementation:
 #                ws = []
-#                print("C thS={} aoL={} aaL={}".format(theta.shape, len(all_observations), len(all_actions)))
-#                i = 1
 #                for action in all_actions:
 #                    for ob in all_observations:
 #                        g = get_grad_logp_action(theta, ob, action).reshape(d,1)
 #                        ws.append(g.dot(g.T))
-#                        print("D itrs={}".format(i))
-#                        i += 1
-#                print("D")
 #                F = np.mean(np.array(ws), axis=0)
 
                 # this is an efficient implementation
