@@ -317,6 +317,24 @@ def main(env_id, batch_size, discount, learning_rate, n_itrs, render, use_baseli
                 d = len(theta.flatten())
                 F = np.zeros((d, d))
                 "*** YOUR CODE HERE ***"
+                # this is an intuitive but very inefficient implementation:
+#                ws = []
+#                print("C thS={} aoL={} aaL={}".format(theta.shape, len(all_observations), len(all_actions)))
+#                i = 1
+#                for action in all_actions:
+#                    for ob in all_observations:
+#                        g = get_grad_logp_action(theta, ob, action).reshape(d,1)
+#                        ws.append(g.dot(g.T))
+#                        print("D itrs={}".format(i))
+#                        i += 1
+#                print("D")
+#                F = np.mean(np.array(ws), axis=0)
+
+                # this is an efficient implementation
+                for i in range(len(all_actions)):
+                    grads = get_grad_logp_action(theta, all_observations[i], all_actions[i]).flatten()
+                    F += np.outer(grads, grads.T)
+                F /= len(all_actions)
                 return F
 
             def compute_natural_gradient(F, grad, reg=1e-4):
@@ -328,6 +346,8 @@ def main(env_id, batch_size, discount, learning_rate, n_itrs, render, use_baseli
                 """
                 natural_grad = np.zeros_like(grad)
                 "*** YOUR CODE HERE ***"
+                F_inv = np.linalg.inv(F + reg * np.eye(F.shape[0]))
+                natural_grad = F_inv.dot(grad.flatten()).reshape(grad.shape)
                 return natural_grad
 
             def compute_step_size(F, natural_grad, natural_step_size):
@@ -339,6 +359,12 @@ def main(env_id, batch_size, discount, learning_rate, n_itrs, render, use_baseli
                 """
                 step_size = 0.
                 "*** YOUR CODE HERE ***"
+                # this works with the inefficient implementation from compute_fisher_matrix
+#                w = natural_grad.dot(F).dot(natural_grad.T)
+
+                natural_grad = natural_grad.flatten()
+                w = natural_grad.T.dot(F).dot(natural_grad)
+                step_size = np.sqrt(2 * natural_step_size / w)
                 return step_size
 
             test_once(compute_fisher_matrix)
