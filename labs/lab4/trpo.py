@@ -164,6 +164,7 @@ def trpo(env, env_maker, policy, baseline, n_envs=mp.cpu_count(), last_iter=-1, 
                     """
                     surr_loss = Variable(np.array(0.))
                     "*** YOUR CODE HERE ***"
+                    surr_loss = -F.mean( new_dists.likelihood_ratio(old_dists, all_acts) * all_advs )
                     return surr_loss
 
                 def compute_kl(old_dists, new_dists):
@@ -174,6 +175,7 @@ def trpo(env, env_maker, policy, baseline, n_envs=mp.cpu_count(), last_iter=-1, 
                     """
                     kl = Variable(np.array(0.))
                     "*** YOUR CODE HERE ***"
+                    kl = F.mean(old_dists.kl_div(new_dists))
                     return kl
 
                 test_once(compute_surr_loss)

@@ -1,0 +1,2601 @@
+[2019-03-22 04:22:47.017638 UTC] Starting env pool
+[2019-03-22 04:22:47.127895 UTC] Starting iteration 0
+[2019-03-22 04:22:47.129141 UTC] Start collecting samples
+[2019-03-22 04:22:48.319508 UTC] Computing input variables for policy optimization
+[2019-03-22 04:22:48.389358 UTC] Computing policy gradient
+[2019-03-22 04:22:48.438196 UTC] Updating baseline
+[2019-03-22 04:22:48.577699 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 0          |
+| SurrLoss             | -0.0026496 |
+| Entropy              | 0.6925     |
+| Perplexity           | 1.9987     |
+| AveragePolicyProb[0] | 0.50155    |
+| AveragePolicyProb[1] | 0.49845    |
+| AverageReturn        | 23.462     |
+| MinReturn            | 9          |
+| MaxReturn            | 81         |
+| StdReturn            | 11.748     |
+| AverageEpisodeLength | 23.462     |
+| MinEpisodeLength     | 9          |
+| MaxEpisodeLength     | 81         |
+| StdEpisodeLength     | 11.748     |
+| TotalNEpisodes       | 78         |
+| TotalNSamples        | 1830       |
+| ExplainedVariance    | -0.0058665 |
+-------------------------------------
+[2019-03-22 04:22:49.860463 UTC] Saving snapshot
+[2019-03-22 04:22:49.876210 UTC] Starting iteration 1
+[2019-03-22 04:22:49.876922 UTC] Start collecting samples
+[2019-03-22 04:22:50.602373 UTC] Computing input variables for policy optimization
+[2019-03-22 04:22:50.646045 UTC] Computing policy gradient
+[2019-03-22 04:22:50.657613 UTC] Updating baseline
+[2019-03-22 04:22:50.755662 UTC] Computing logging information
+------------------------------------
+| Iteration            | 1         |
+| SurrLoss             | -0.028403 |
+| Entropy              | 0.63881   |
+| Perplexity           | 1.8942    |
+| AveragePolicyProb[0] | 0.48601   |
+| AveragePolicyProb[1] | 0.51399   |
+| AverageReturn        | 30.72     |
+| MinReturn            | 9         |
+| MaxReturn            | 109       |
+| StdReturn            | 18.103    |
+| AverageEpisodeLength | 30.72     |
+| MinEpisodeLength     | 9         |
+| MaxEpisodeLength     | 109       |
+| StdEpisodeLength     | 18.103    |
+| TotalNEpisodes       | 124       |
+| TotalNSamples        | 3619      |
+| ExplainedVariance    | 0.15902   |
+------------------------------------
+[2019-03-22 04:22:51.874045 UTC] Saving snapshot
+[2019-03-22 04:22:51.890678 UTC] Starting iteration 2
+[2019-03-22 04:22:51.891493 UTC] Start collecting samples
+[2019-03-22 04:22:52.408093 UTC] Computing input variables for policy optimization
+[2019-03-22 04:22:52.436848 UTC] Computing policy gradient
+[2019-03-22 04:22:52.448467 UTC] Updating baseline
+[2019-03-22 04:22:52.547539 UTC] Computing logging information
+------------------------------------
+| Iteration            | 2         |
+| SurrLoss             | -0.044707 |
+| Entropy              | 0.60104   |
+| Perplexity           | 1.824     |
+| AveragePolicyProb[0] | 0.48011   |
+| AveragePolicyProb[1] | 0.51989   |
+| AverageReturn        | 38.42     |
+| MinReturn            | 10        |
+| MaxReturn            | 112       |
+| StdReturn            | 22.32     |
+| AverageEpisodeLength | 38.42     |
+| MinEpisodeLength     | 10        |
+| MaxEpisodeLength     | 112       |
+| StdEpisodeLength     | 22.32     |
+| TotalNEpisodes       | 148       |
+| TotalNSamples        | 5017      |
+| ExplainedVariance    | 0.33975   |
+------------------------------------
+[2019-03-22 04:22:53.964716 UTC] Saving snapshot
+[2019-03-22 04:22:53.979215 UTC] Starting iteration 3
+[2019-03-22 04:22:53.980599 UTC] Start collecting samples
+[2019-03-22 04:22:54.395502 UTC] Computing input variables for policy optimization
+[2019-03-22 04:22:54.416953 UTC] Computing policy gradient
+[2019-03-22 04:22:54.426895 UTC] Updating baseline
+[2019-03-22 04:22:54.521955 UTC] Computing logging information
+------------------------------------
+| Iteration            | 3         |
+| SurrLoss             | -0.022341 |
+| Entropy              | 0.56557   |
+| Perplexity           | 1.7605    |
+| AveragePolicyProb[0] | 0.51612   |
+| AveragePolicyProb[1] | 0.48388   |
+| AverageReturn        | 53.1      |
+| MinReturn            | 10        |
+| MaxReturn            | 200       |
+| StdReturn            | 42.011    |
+| AverageEpisodeLength | 53.1      |
+| MinEpisodeLength     | 10        |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 42.011    |
+| TotalNEpisodes       | 161       |
+| TotalNSamples        | 6783      |
+| ExplainedVariance    | 0.33173   |
+------------------------------------
+[2019-03-22 04:22:55.915491 UTC] Saving snapshot
+[2019-03-22 04:22:55.929043 UTC] Starting iteration 4
+[2019-03-22 04:22:55.930267 UTC] Start collecting samples
+[2019-03-22 04:22:56.323101 UTC] Computing input variables for policy optimization
+[2019-03-22 04:22:56.343813 UTC] Computing policy gradient
+[2019-03-22 04:22:56.354555 UTC] Updating baseline
+[2019-03-22 04:22:56.452010 UTC] Computing logging information
+------------------------------------
+| Iteration            | 4         |
+| SurrLoss             | -0.018682 |
+| Entropy              | 0.5227    |
+| Perplexity           | 1.6866    |
+| AveragePolicyProb[0] | 0.49948   |
+| AveragePolicyProb[1] | 0.50052   |
+| AverageReturn        | 68.93     |
+| MinReturn            | 10        |
+| MaxReturn            | 200       |
+| StdReturn            | 52.911    |
+| AverageEpisodeLength | 68.93     |
+| MinEpisodeLength     | 10        |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 52.911    |
+| TotalNEpisodes       | 173       |
+| TotalNSamples        | 8606      |
+| ExplainedVariance    | 0.75997   |
+------------------------------------
+[2019-03-22 04:22:57.541106 UTC] Saving snapshot
+[2019-03-22 04:22:57.553194 UTC] Starting iteration 5
+[2019-03-22 04:22:57.554105 UTC] Start collecting samples
+[2019-03-22 04:22:57.920805 UTC] Computing input variables for policy optimization
+[2019-03-22 04:22:57.940147 UTC] Computing policy gradient
+[2019-03-22 04:22:57.949034 UTC] Updating baseline
+[2019-03-22 04:22:58.043032 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 5          |
+| SurrLoss             | -0.0081843 |
+| Entropy              | 0.48272    |
+| Perplexity           | 1.6205     |
+| AveragePolicyProb[0] | 0.4921     |
+| AveragePolicyProb[1] | 0.5079     |
+| AverageReturn        | 84.29      |
+| MinReturn            | 16         |
+| MaxReturn            | 200        |
+| StdReturn            | 59.685     |
+| AverageEpisodeLength | 84.29      |
+| MinEpisodeLength     | 16         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 59.685     |
+| TotalNEpisodes       | 183        |
+| TotalNSamples        | 10372      |
+| ExplainedVariance    | 0.69231    |
+-------------------------------------
+[2019-03-22 04:22:59.440575 UTC] Saving snapshot
+[2019-03-22 04:22:59.457744 UTC] Starting iteration 6
+[2019-03-22 04:22:59.458926 UTC] Start collecting samples
+[2019-03-22 04:22:59.836635 UTC] Computing input variables for policy optimization
+[2019-03-22 04:22:59.857913 UTC] Computing policy gradient
+[2019-03-22 04:22:59.867741 UTC] Updating baseline
+[2019-03-22 04:22:59.962451 UTC] Computing logging information
+-----------------------------------
+| Iteration            | 6        |
+| SurrLoss             | -0.0185  |
+| Entropy              | 0.45762  |
+| Perplexity           | 1.5803   |
+| AveragePolicyProb[0] | 0.48894  |
+| AveragePolicyProb[1] | 0.51106  |
+| AverageReturn        | 102.62   |
+| MinReturn            | 18       |
+| MaxReturn            | 200      |
+| StdReturn            | 62.643   |
+| AverageEpisodeLength | 102.62   |
+| MinEpisodeLength     | 18       |
+| MaxEpisodeLength     | 200      |
+| StdEpisodeLength     | 62.643   |
+| TotalNEpisodes       | 197      |
+| TotalNSamples        | 12619    |
+| ExplainedVariance    | 0.60987  |
+-----------------------------------
+[2019-03-22 04:23:01.336632 UTC] Saving snapshot
+[2019-03-22 04:23:01.349873 UTC] Starting iteration 7
+[2019-03-22 04:23:01.351192 UTC] Start collecting samples
+[2019-03-22 04:23:01.700461 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:01.724824 UTC] Computing policy gradient
+[2019-03-22 04:23:01.734305 UTC] Updating baseline
+[2019-03-22 04:23:01.823647 UTC] Computing logging information
+------------------------------------
+| Iteration            | 7         |
+| SurrLoss             | -0.010332 |
+| Entropy              | 0.43068   |
+| Perplexity           | 1.5383    |
+| AveragePolicyProb[0] | 0.47306   |
+| AveragePolicyProb[1] | 0.52694   |
+| AverageReturn        | 116.37    |
+| MinReturn            | 18        |
+| MaxReturn            | 200       |
+| StdReturn            | 62.184    |
+| AverageEpisodeLength | 116.37    |
+| MinEpisodeLength     | 18        |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 62.184    |
+| TotalNEpisodes       | 208       |
+| TotalNSamples        | 14440     |
+| ExplainedVariance    | 0.71842   |
+------------------------------------
+[2019-03-22 04:23:02.939923 UTC] Saving snapshot
+[2019-03-22 04:23:02.952828 UTC] Starting iteration 8
+[2019-03-22 04:23:02.953667 UTC] Start collecting samples
+[2019-03-22 04:23:03.320459 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:03.357423 UTC] Computing policy gradient
+[2019-03-22 04:23:03.367933 UTC] Updating baseline
+[2019-03-22 04:23:03.622646 UTC] Computing logging information
+------------------------------------
+| Iteration            | 8         |
+| SurrLoss             | -0.013116 |
+| Entropy              | 0.4112    |
+| Perplexity           | 1.5086    |
+| AveragePolicyProb[0] | 0.48026   |
+| AveragePolicyProb[1] | 0.51974   |
+| AverageReturn        | 129.77    |
+| MinReturn            | 29        |
+| MaxReturn            | 200       |
+| StdReturn            | 60.45     |
+| AverageEpisodeLength | 129.77    |
+| MinEpisodeLength     | 29        |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 60.45     |
+| TotalNEpisodes       | 218       |
+| TotalNSamples        | 16252     |
+| ExplainedVariance    | 0.66176   |
+------------------------------------
+[2019-03-22 04:23:04.745517 UTC] Saving snapshot
+[2019-03-22 04:23:04.758497 UTC] Starting iteration 9
+[2019-03-22 04:23:04.759657 UTC] Start collecting samples
+[2019-03-22 04:23:05.134540 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:05.155484 UTC] Computing policy gradient
+[2019-03-22 04:23:05.166417 UTC] Updating baseline
+[2019-03-22 04:23:05.265697 UTC] Computing logging information
+-----------------------------------
+| Iteration            | 9        |
+| SurrLoss             | 0.012507 |
+| Entropy              | 0.37544  |
+| Perplexity           | 1.4556   |
+| AveragePolicyProb[0] | 0.50694  |
+| AveragePolicyProb[1] | 0.49306  |
+| AverageReturn        | 147.4    |
+| MinReturn            | 29       |
+| MaxReturn            | 200      |
+| StdReturn            | 55.489   |
+| AverageEpisodeLength | 147.4    |
+| MinEpisodeLength     | 29       |
+| MaxEpisodeLength     | 200      |
+| StdEpisodeLength     | 55.489   |
+| TotalNEpisodes       | 231      |
+| TotalNSamples        | 18722    |
+| ExplainedVariance    | 0.50937  |
+-----------------------------------
+[2019-03-22 04:23:06.492917 UTC] Saving snapshot
+[2019-03-22 04:23:06.506935 UTC] Starting iteration 10
+[2019-03-22 04:23:06.508223 UTC] Start collecting samples
+[2019-03-22 04:23:06.889699 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:06.912243 UTC] Computing policy gradient
+[2019-03-22 04:23:06.926946 UTC] Updating baseline
+[2019-03-22 04:23:07.021389 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 10         |
+| SurrLoss             | 0.00071307 |
+| Entropy              | 0.33966    |
+| Perplexity           | 1.4045     |
+| AveragePolicyProb[0] | 0.54324    |
+| AveragePolicyProb[1] | 0.45676    |
+| AverageReturn        | 159.84     |
+| MinReturn            | 33         |
+| MaxReturn            | 200        |
+| StdReturn            | 47.254     |
+| AverageEpisodeLength | 159.84     |
+| MinEpisodeLength     | 33         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 47.254     |
+| TotalNEpisodes       | 242        |
+| TotalNSamples        | 20676      |
+| ExplainedVariance    | 0.64675    |
+-------------------------------------
+[2019-03-22 04:23:08.413217 UTC] Saving snapshot
+[2019-03-22 04:23:08.428325 UTC] Starting iteration 11
+[2019-03-22 04:23:08.429540 UTC] Start collecting samples
+[2019-03-22 04:23:08.770437 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:08.795653 UTC] Computing policy gradient
+[2019-03-22 04:23:08.804691 UTC] Updating baseline
+[2019-03-22 04:23:08.892026 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 11         |
+| SurrLoss             | -0.0028137 |
+| Entropy              | 0.32894    |
+| Perplexity           | 1.3895     |
+| AveragePolicyProb[0] | 0.53721    |
+| AveragePolicyProb[1] | 0.46279    |
+| AverageReturn        | 167.72     |
+| MinReturn            | 64         |
+| MaxReturn            | 200        |
+| StdReturn            | 37.118     |
+| AverageEpisodeLength | 167.72     |
+| MinEpisodeLength     | 64         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 37.118     |
+| TotalNEpisodes       | 252        |
+| TotalNSamples        | 22268      |
+| ExplainedVariance    | 0.90221    |
+-------------------------------------
+[2019-03-22 04:23:10.065228 UTC] Saving snapshot
+[2019-03-22 04:23:10.079165 UTC] Starting iteration 12
+[2019-03-22 04:23:10.080258 UTC] Start collecting samples
+[2019-03-22 04:23:10.490321 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:10.510396 UTC] Computing policy gradient
+[2019-03-22 04:23:10.519426 UTC] Updating baseline
+[2019-03-22 04:23:10.615087 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 12         |
+| SurrLoss             | -0.0050583 |
+| Entropy              | 0.31665    |
+| Perplexity           | 1.3725     |
+| AveragePolicyProb[0] | 0.51772    |
+| AveragePolicyProb[1] | 0.48228    |
+| AverageReturn        | 171.83     |
+| MinReturn            | 84         |
+| MaxReturn            | 200        |
+| StdReturn            | 32.47      |
+| AverageEpisodeLength | 171.83     |
+| MinEpisodeLength     | 84         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 32.47      |
+| TotalNEpisodes       | 266        |
+| TotalNSamples        | 24675      |
+| ExplainedVariance    | 0.95821    |
+-------------------------------------
+[2019-03-22 04:23:12.033224 UTC] Saving snapshot
+[2019-03-22 04:23:12.049176 UTC] Starting iteration 13
+[2019-03-22 04:23:12.051074 UTC] Start collecting samples
+[2019-03-22 04:23:12.449633 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:12.469146 UTC] Computing policy gradient
+[2019-03-22 04:23:12.482892 UTC] Updating baseline
+[2019-03-22 04:23:12.574657 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 13         |
+| SurrLoss             | -0.0089695 |
+| Entropy              | 0.30494    |
+| Perplexity           | 1.3565     |
+| AveragePolicyProb[0] | 0.51431    |
+| AveragePolicyProb[1] | 0.48569    |
+| AverageReturn        | 174.15     |
+| MinReturn            | 84         |
+| MaxReturn            | 200        |
+| StdReturn            | 31.112     |
+| AverageEpisodeLength | 174.15     |
+| MinEpisodeLength     | 84         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 31.112     |
+| TotalNEpisodes       | 276        |
+| TotalNSamples        | 26568      |
+| ExplainedVariance    | 0.78158    |
+-------------------------------------
+[2019-03-22 04:23:13.952669 UTC] Saving snapshot
+[2019-03-22 04:23:13.969055 UTC] Starting iteration 14
+[2019-03-22 04:23:13.970306 UTC] Start collecting samples
+[2019-03-22 04:23:14.294206 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:14.312587 UTC] Computing policy gradient
+[2019-03-22 04:23:14.324331 UTC] Updating baseline
+[2019-03-22 04:23:14.416549 UTC] Computing logging information
+------------------------------------
+| Iteration            | 14        |
+| SurrLoss             | 0.0091991 |
+| Entropy              | 0.30466   |
+| Perplexity           | 1.3562    |
+| AveragePolicyProb[0] | 0.51024   |
+| AveragePolicyProb[1] | 0.48976   |
+| AverageReturn        | 175.75    |
+| MinReturn            | 84        |
+| MaxReturn            | 200       |
+| StdReturn            | 31        |
+| AverageEpisodeLength | 175.75    |
+| MinEpisodeLength     | 84        |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 31        |
+| TotalNEpisodes       | 283       |
+| TotalNSamples        | 27947     |
+| ExplainedVariance    | 0.72438   |
+------------------------------------
+[2019-03-22 04:23:15.581110 UTC] Saving snapshot
+[2019-03-22 04:23:15.596242 UTC] Starting iteration 15
+[2019-03-22 04:23:15.597371 UTC] Start collecting samples
+[2019-03-22 04:23:15.999874 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:16.021109 UTC] Computing policy gradient
+[2019-03-22 04:23:16.035398 UTC] Updating baseline
+[2019-03-22 04:23:16.129183 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 15         |
+| SurrLoss             | 0.00044482 |
+| Entropy              | 0.30285    |
+| Perplexity           | 1.3537     |
+| AveragePolicyProb[0] | 0.4941     |
+| AveragePolicyProb[1] | 0.5059     |
+| AverageReturn        | 180.24     |
+| MinReturn            | 96         |
+| MaxReturn            | 200        |
+| StdReturn            | 27.027     |
+| AverageEpisodeLength | 180.24     |
+| MinEpisodeLength     | 96         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 27.027     |
+| TotalNEpisodes       | 296        |
+| TotalNSamples        | 30547      |
+| ExplainedVariance    | 0.51266    |
+-------------------------------------
+[2019-03-22 04:23:17.426784 UTC] Saving snapshot
+[2019-03-22 04:23:17.442563 UTC] Starting iteration 16
+[2019-03-22 04:23:17.443622 UTC] Start collecting samples
+[2019-03-22 04:23:17.826554 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:17.846077 UTC] Computing policy gradient
+[2019-03-22 04:23:17.856351 UTC] Updating baseline
+[2019-03-22 04:23:17.957912 UTC] Computing logging information
+------------------------------------
+| Iteration            | 16        |
+| SurrLoss             | 0.0021983 |
+| Entropy              | 0.29955   |
+| Perplexity           | 1.3492    |
+| AveragePolicyProb[0] | 0.49575   |
+| AveragePolicyProb[1] | 0.50425   |
+| AverageReturn        | 184.14    |
+| MinReturn            | 107       |
+| MaxReturn            | 200       |
+| StdReturn            | 23.981    |
+| AverageEpisodeLength | 184.14    |
+| MinEpisodeLength     | 107       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 23.981    |
+| TotalNEpisodes       | 306       |
+| TotalNSamples        | 32547     |
+| ExplainedVariance    | 0.44346   |
+------------------------------------
+[2019-03-22 04:23:19.238903 UTC] Saving snapshot
+[2019-03-22 04:23:19.252093 UTC] Starting iteration 17
+[2019-03-22 04:23:19.252802 UTC] Start collecting samples
+[2019-03-22 04:23:19.578041 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:19.596362 UTC] Computing policy gradient
+[2019-03-22 04:23:19.605874 UTC] Updating baseline
+[2019-03-22 04:23:19.697181 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 17         |
+| SurrLoss             | -0.0013676 |
+| Entropy              | 0.30299    |
+| Perplexity           | 1.3539     |
+| AveragePolicyProb[0] | 0.48811    |
+| AveragePolicyProb[1] | 0.51189    |
+| AverageReturn        | 186.95     |
+| MinReturn            | 125        |
+| MaxReturn            | 200        |
+| StdReturn            | 21.17      |
+| AverageEpisodeLength | 186.95     |
+| MinEpisodeLength     | 125        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 21.17      |
+| TotalNEpisodes       | 315        |
+| TotalNSamples        | 34347      |
+| ExplainedVariance    | 0.15067    |
+-------------------------------------
+[2019-03-22 04:23:21.009871 UTC] Saving snapshot
+[2019-03-22 04:23:21.022920 UTC] Starting iteration 18
+[2019-03-22 04:23:21.023930 UTC] Start collecting samples
+[2019-03-22 04:23:21.387845 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:21.407718 UTC] Computing policy gradient
+[2019-03-22 04:23:21.417306 UTC] Updating baseline
+[2019-03-22 04:23:21.508121 UTC] Computing logging information
+-----------------------------------
+| Iteration            | 18       |
+| SurrLoss             | 0.018371 |
+| Entropy              | 0.3055   |
+| Perplexity           | 1.3573   |
+| AveragePolicyProb[0] | 0.50297  |
+| AveragePolicyProb[1] | 0.49703  |
+| AverageReturn        | 187.89   |
+| MinReturn            | 125      |
+| MaxReturn            | 200      |
+| StdReturn            | 20.679   |
+| AverageEpisodeLength | 187.89   |
+| MinEpisodeLength     | 125      |
+| MaxEpisodeLength     | 200      |
+| StdEpisodeLength     | 20.679   |
+| TotalNEpisodes       | 326      |
+| TotalNSamples        | 36547    |
+| ExplainedVariance    | 0.062421 |
+-----------------------------------
+[2019-03-22 04:23:22.615331 UTC] Saving snapshot
+[2019-03-22 04:23:22.628323 UTC] Starting iteration 19
+[2019-03-22 04:23:22.629565 UTC] Start collecting samples
+[2019-03-22 04:23:22.933912 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:22.951928 UTC] Computing policy gradient
+[2019-03-22 04:23:22.961578 UTC] Updating baseline
+[2019-03-22 04:23:23.055563 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 19         |
+| SurrLoss             | -0.0087812 |
+| Entropy              | 0.30583    |
+| Perplexity           | 1.3578     |
+| AveragePolicyProb[0] | 0.49494    |
+| AveragePolicyProb[1] | 0.50506    |
+| AverageReturn        | 188.35     |
+| MinReturn            | 125        |
+| MaxReturn            | 200        |
+| StdReturn            | 20.606     |
+| AverageEpisodeLength | 188.35     |
+| MinEpisodeLength     | 125        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 20.606     |
+| TotalNEpisodes       | 334        |
+| TotalNSamples        | 38147      |
+| ExplainedVariance    | 0.17511    |
+-------------------------------------
+[2019-03-22 04:23:24.189195 UTC] Saving snapshot
+[2019-03-22 04:23:24.202724 UTC] Starting iteration 20
+[2019-03-22 04:23:24.203569 UTC] Start collecting samples
+[2019-03-22 04:23:24.606074 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:24.635126 UTC] Computing policy gradient
+[2019-03-22 04:23:24.648254 UTC] Updating baseline
+[2019-03-22 04:23:24.743334 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 20         |
+| SurrLoss             | -0.0001148 |
+| Entropy              | 0.30458    |
+| Perplexity           | 1.3561     |
+| AveragePolicyProb[0] | 0.50163    |
+| AveragePolicyProb[1] | 0.49837    |
+| AverageReturn        | 192.26     |
+| MinReturn            | 125        |
+| MaxReturn            | 200        |
+| StdReturn            | 18.115     |
+| AverageEpisodeLength | 192.26     |
+| MinEpisodeLength     | 125        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 18.115     |
+| TotalNEpisodes       | 346        |
+| TotalNSamples        | 40547      |
+| ExplainedVariance    | -0.067381  |
+-------------------------------------
+[2019-03-22 04:23:25.816066 UTC] Saving snapshot
+[2019-03-22 04:23:25.827639 UTC] Starting iteration 21
+[2019-03-22 04:23:25.828518 UTC] Start collecting samples
+[2019-03-22 04:23:26.221499 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:26.240939 UTC] Computing policy gradient
+[2019-03-22 04:23:26.251419 UTC] Updating baseline
+[2019-03-22 04:23:26.347884 UTC] Computing logging information
+-----------------------------------
+| Iteration            | 21       |
+| SurrLoss             | 0.019042 |
+| Entropy              | 0.31312  |
+| Perplexity           | 1.3677   |
+| AveragePolicyProb[0] | 0.49523  |
+| AveragePolicyProb[1] | 0.50477  |
+| AverageReturn        | 196.68   |
+| MinReturn            | 156      |
+| MaxReturn            | 200      |
+| StdReturn            | 9.8771   |
+| AverageEpisodeLength | 196.68   |
+| MinEpisodeLength     | 156      |
+| MaxEpisodeLength     | 200      |
+| StdEpisodeLength     | 9.8771   |
+| TotalNEpisodes       | 356      |
+| TotalNSamples        | 42547    |
+| ExplainedVariance    | 0.038567 |
+-----------------------------------
+[2019-03-22 04:23:27.687215 UTC] Saving snapshot
+[2019-03-22 04:23:27.704470 UTC] Starting iteration 22
+[2019-03-22 04:23:27.705866 UTC] Start collecting samples
+[2019-03-22 04:23:28.044406 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:28.062369 UTC] Computing policy gradient
+[2019-03-22 04:23:28.078421 UTC] Updating baseline
+[2019-03-22 04:23:28.184957 UTC] Computing logging information
+-----------------------------------
+| Iteration            | 22       |
+| SurrLoss             | 0.013961 |
+| Entropy              | 0.32705  |
+| Perplexity           | 1.3869   |
+| AveragePolicyProb[0] | 0.47742  |
+| AveragePolicyProb[1] | 0.52258  |
+| AverageReturn        | 198.45   |
+| MinReturn            | 161      |
+| MaxReturn            | 200      |
+| StdReturn            | 6.3093   |
+| AverageEpisodeLength | 198.45   |
+| MinEpisodeLength     | 161      |
+| MaxEpisodeLength     | 200      |
+| StdEpisodeLength     | 6.3093   |
+| TotalNEpisodes       | 363      |
+| TotalNSamples        | 43947    |
+| ExplainedVariance    | 0.04213  |
+-----------------------------------
+[2019-03-22 04:23:29.304468 UTC] Saving snapshot
+[2019-03-22 04:23:29.320623 UTC] Starting iteration 23
+[2019-03-22 04:23:29.321600 UTC] Start collecting samples
+[2019-03-22 04:23:29.720170 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:29.741438 UTC] Computing policy gradient
+[2019-03-22 04:23:29.751838 UTC] Updating baseline
+[2019-03-22 04:23:29.855626 UTC] Computing logging information
+------------------------------------
+| Iteration            | 23        |
+| SurrLoss             | -0.015041 |
+| Entropy              | 0.32841   |
+| Perplexity           | 1.3888    |
+| AveragePolicyProb[0] | 0.50652   |
+| AveragePolicyProb[1] | 0.49348   |
+| AverageReturn        | 199.79    |
+| MinReturn            | 179       |
+| MaxReturn            | 200       |
+| StdReturn            | 2.0895    |
+| AverageEpisodeLength | 199.79    |
+| MinEpisodeLength     | 179       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 2.0895    |
+| TotalNEpisodes       | 376       |
+| TotalNSamples        | 46547     |
+| ExplainedVariance    | 0.16842   |
+------------------------------------
+[2019-03-22 04:23:31.001735 UTC] Saving snapshot
+[2019-03-22 04:23:31.014663 UTC] Starting iteration 24
+[2019-03-22 04:23:31.015360 UTC] Start collecting samples
+[2019-03-22 04:23:31.381700 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:31.399837 UTC] Computing policy gradient
+[2019-03-22 04:23:31.410228 UTC] Updating baseline
+[2019-03-22 04:23:31.504878 UTC] Computing logging information
+------------------------------------
+| Iteration            | 24        |
+| SurrLoss             | 0.0097446 |
+| Entropy              | 0.34029   |
+| Perplexity           | 1.4054    |
+| AveragePolicyProb[0] | 0.50222   |
+| AveragePolicyProb[1] | 0.49778   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 386       |
+| TotalNSamples        | 48547     |
+| ExplainedVariance    | 0.43724   |
+------------------------------------
+[2019-03-22 04:23:32.470981 UTC] Saving snapshot
+[2019-03-22 04:23:32.483796 UTC] Starting iteration 25
+[2019-03-22 04:23:32.484840 UTC] Start collecting samples
+[2019-03-22 04:23:32.845666 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:32.872168 UTC] Computing policy gradient
+[2019-03-22 04:23:32.889852 UTC] Updating baseline
+[2019-03-22 04:23:33.008285 UTC] Computing logging information
+------------------------------------
+| Iteration            | 25        |
+| SurrLoss             | 0.0051353 |
+| Entropy              | 0.35102   |
+| Perplexity           | 1.4205    |
+| AveragePolicyProb[0] | 0.48472   |
+| AveragePolicyProb[1] | 0.51528   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 395       |
+| TotalNSamples        | 50347     |
+| ExplainedVariance    | 0.48206   |
+------------------------------------
+[2019-03-22 04:23:34.516319 UTC] Saving snapshot
+[2019-03-22 04:23:34.533070 UTC] Starting iteration 26
+[2019-03-22 04:23:34.533991 UTC] Start collecting samples
+[2019-03-22 04:23:34.902713 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:34.924195 UTC] Computing policy gradient
+[2019-03-22 04:23:34.940824 UTC] Updating baseline
+[2019-03-22 04:23:35.058592 UTC] Computing logging information
+-----------------------------------
+| Iteration            | 26       |
+| SurrLoss             | 0.015302 |
+| Entropy              | 0.36208  |
+| Perplexity           | 1.4363   |
+| AveragePolicyProb[0] | 0.50729  |
+| AveragePolicyProb[1] | 0.49271  |
+| AverageReturn        | 200      |
+| MinReturn            | 200      |
+| MaxReturn            | 200      |
+| StdReturn            | 0        |
+| AverageEpisodeLength | 200      |
+| MinEpisodeLength     | 200      |
+| MaxEpisodeLength     | 200      |
+| StdEpisodeLength     | 0        |
+| TotalNEpisodes       | 406      |
+| TotalNSamples        | 52547    |
+| ExplainedVariance    | 0.71955  |
+-----------------------------------
+[2019-03-22 04:23:36.466353 UTC] Saving snapshot
+[2019-03-22 04:23:36.483439 UTC] Starting iteration 27
+[2019-03-22 04:23:36.484676 UTC] Start collecting samples
+[2019-03-22 04:23:36.850959 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:36.871340 UTC] Computing policy gradient
+[2019-03-22 04:23:36.890750 UTC] Updating baseline
+[2019-03-22 04:23:36.994602 UTC] Computing logging information
+------------------------------------
+| Iteration            | 27        |
+| SurrLoss             | 0.0040565 |
+| Entropy              | 0.37528   |
+| Perplexity           | 1.4554    |
+| AveragePolicyProb[0] | 0.50954   |
+| AveragePolicyProb[1] | 0.49047   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 414       |
+| TotalNSamples        | 54147     |
+| ExplainedVariance    | 0.57323   |
+------------------------------------
+[2019-03-22 04:23:38.262568 UTC] Saving snapshot
+[2019-03-22 04:23:38.275831 UTC] Starting iteration 28
+[2019-03-22 04:23:38.277194 UTC] Start collecting samples
+[2019-03-22 04:23:38.687864 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:38.708087 UTC] Computing policy gradient
+[2019-03-22 04:23:38.720109 UTC] Updating baseline
+[2019-03-22 04:23:38.824469 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 28         |
+| SurrLoss             | -0.0063438 |
+| Entropy              | 0.37735    |
+| Perplexity           | 1.4584     |
+| AveragePolicyProb[0] | 0.49706    |
+| AveragePolicyProb[1] | 0.50294    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 426        |
+| TotalNSamples        | 56547      |
+| ExplainedVariance    | 0.79405    |
+-------------------------------------
+[2019-03-22 04:23:40.155011 UTC] Saving snapshot
+[2019-03-22 04:23:40.167508 UTC] Starting iteration 29
+[2019-03-22 04:23:40.168493 UTC] Start collecting samples
+[2019-03-22 04:23:40.538475 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:40.561666 UTC] Computing policy gradient
+[2019-03-22 04:23:40.574258 UTC] Updating baseline
+[2019-03-22 04:23:40.680106 UTC] Computing logging information
+------------------------------------
+| Iteration            | 29        |
+| SurrLoss             | -0.013693 |
+| Entropy              | 0.38089   |
+| Perplexity           | 1.4636    |
+| AveragePolicyProb[0] | 0.50362   |
+| AveragePolicyProb[1] | 0.49638   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 436       |
+| TotalNSamples        | 58547     |
+| ExplainedVariance    | 0.51204   |
+------------------------------------
+[2019-03-22 04:23:42.295976 UTC] Saving snapshot
+[2019-03-22 04:23:42.324577 UTC] Starting iteration 30
+[2019-03-22 04:23:42.326535 UTC] Start collecting samples
+[2019-03-22 04:23:42.674336 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:42.697720 UTC] Computing policy gradient
+[2019-03-22 04:23:42.708990 UTC] Updating baseline
+[2019-03-22 04:23:42.812188 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 30         |
+| SurrLoss             | -0.0094692 |
+| Entropy              | 0.37469    |
+| Perplexity           | 1.4545     |
+| AveragePolicyProb[0] | 0.49617    |
+| AveragePolicyProb[1] | 0.50383    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 443        |
+| TotalNSamples        | 59947      |
+| ExplainedVariance    | 0.51915    |
+-------------------------------------
+[2019-03-22 04:23:43.723653 UTC] Saving snapshot
+[2019-03-22 04:23:43.734070 UTC] Starting iteration 31
+[2019-03-22 04:23:43.734751 UTC] Start collecting samples
+[2019-03-22 04:23:44.137166 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:44.157256 UTC] Computing policy gradient
+[2019-03-22 04:23:44.167647 UTC] Updating baseline
+[2019-03-22 04:23:44.268302 UTC] Computing logging information
+------------------------------------
+| Iteration            | 31        |
+| SurrLoss             | -0.010132 |
+| Entropy              | 0.36079   |
+| Perplexity           | 1.4345    |
+| AveragePolicyProb[0] | 0.50762   |
+| AveragePolicyProb[1] | 0.49238   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 456       |
+| TotalNSamples        | 62547     |
+| ExplainedVariance    | 0.48964   |
+------------------------------------
+[2019-03-22 04:23:45.659990 UTC] Saving snapshot
+[2019-03-22 04:23:45.673401 UTC] Starting iteration 32
+[2019-03-22 04:23:45.674509 UTC] Start collecting samples
+[2019-03-22 04:23:46.094563 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:46.116077 UTC] Computing policy gradient
+[2019-03-22 04:23:46.130896 UTC] Updating baseline
+[2019-03-22 04:23:46.242844 UTC] Computing logging information
+------------------------------------
+| Iteration            | 32        |
+| SurrLoss             | -0.014726 |
+| Entropy              | 0.34342   |
+| Perplexity           | 1.4098    |
+| AveragePolicyProb[0] | 0.49894   |
+| AveragePolicyProb[1] | 0.50106   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 466       |
+| TotalNSamples        | 64547     |
+| ExplainedVariance    | 0.19804   |
+------------------------------------
+[2019-03-22 04:23:47.174064 UTC] Saving snapshot
+[2019-03-22 04:23:47.186622 UTC] Starting iteration 33
+[2019-03-22 04:23:47.187552 UTC] Start collecting samples
+[2019-03-22 04:23:47.566102 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:47.585608 UTC] Computing policy gradient
+[2019-03-22 04:23:47.603062 UTC] Updating baseline
+[2019-03-22 04:23:47.720456 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 33         |
+| SurrLoss             | -0.0013353 |
+| Entropy              | 0.33548    |
+| Perplexity           | 1.3986     |
+| AveragePolicyProb[0] | 0.50786    |
+| AveragePolicyProb[1] | 0.49214    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 475        |
+| TotalNSamples        | 66347      |
+| ExplainedVariance    | -0.073594  |
+-------------------------------------
+[2019-03-22 04:23:48.854623 UTC] Saving snapshot
+[2019-03-22 04:23:48.870863 UTC] Starting iteration 34
+[2019-03-22 04:23:48.872032 UTC] Start collecting samples
+[2019-03-22 04:23:49.309693 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:49.332044 UTC] Computing policy gradient
+[2019-03-22 04:23:49.343333 UTC] Updating baseline
+[2019-03-22 04:23:49.442678 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 34         |
+| SurrLoss             | -0.0036424 |
+| Entropy              | 0.33011    |
+| Perplexity           | 1.3911     |
+| AveragePolicyProb[0] | 0.50497    |
+| AveragePolicyProb[1] | 0.49503    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 486        |
+| TotalNSamples        | 68547      |
+| ExplainedVariance    | -0.092669  |
+-------------------------------------
+[2019-03-22 04:23:50.368969 UTC] Saving snapshot
+[2019-03-22 04:23:50.380585 UTC] Starting iteration 35
+[2019-03-22 04:23:50.381482 UTC] Start collecting samples
+[2019-03-22 04:23:50.723856 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:50.747558 UTC] Computing policy gradient
+[2019-03-22 04:23:50.759319 UTC] Updating baseline
+[2019-03-22 04:23:50.890093 UTC] Computing logging information
+------------------------------------
+| Iteration            | 35        |
+| SurrLoss             | 0.0089568 |
+| Entropy              | 0.32766   |
+| Perplexity           | 1.3877    |
+| AveragePolicyProb[0] | 0.49861   |
+| AveragePolicyProb[1] | 0.50139   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 494       |
+| TotalNSamples        | 70147     |
+| ExplainedVariance    | -0.10547  |
+------------------------------------
+[2019-03-22 04:23:52.251682 UTC] Saving snapshot
+[2019-03-22 04:23:52.268186 UTC] Starting iteration 36
+[2019-03-22 04:23:52.269380 UTC] Start collecting samples
+[2019-03-22 04:23:52.677119 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:52.700991 UTC] Computing policy gradient
+[2019-03-22 04:23:52.713328 UTC] Updating baseline
+[2019-03-22 04:23:52.837817 UTC] Computing logging information
+-----------------------------------
+| Iteration            | 36       |
+| SurrLoss             | 0.011626 |
+| Entropy              | 0.32122  |
+| Perplexity           | 1.3788   |
+| AveragePolicyProb[0] | 0.50911  |
+| AveragePolicyProb[1] | 0.49089  |
+| AverageReturn        | 200      |
+| MinReturn            | 200      |
+| MaxReturn            | 200      |
+| StdReturn            | 0        |
+| AverageEpisodeLength | 200      |
+| MinEpisodeLength     | 200      |
+| MaxEpisodeLength     | 200      |
+| StdEpisodeLength     | 0        |
+| TotalNEpisodes       | 506      |
+| TotalNSamples        | 72547    |
+| ExplainedVariance    | 0.059773 |
+-----------------------------------
+[2019-03-22 04:23:54.355226 UTC] Saving snapshot
+[2019-03-22 04:23:54.369420 UTC] Starting iteration 37
+[2019-03-22 04:23:54.370633 UTC] Start collecting samples
+[2019-03-22 04:23:54.755480 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:54.776566 UTC] Computing policy gradient
+[2019-03-22 04:23:54.789017 UTC] Updating baseline
+[2019-03-22 04:23:54.897843 UTC] Computing logging information
+--------------------------------------
+| Iteration            | 37          |
+| SurrLoss             | -0.00020168 |
+| Entropy              | 0.31587     |
+| Perplexity           | 1.3715      |
+| AveragePolicyProb[0] | 0.48099     |
+| AveragePolicyProb[1] | 0.51901     |
+| AverageReturn        | 200         |
+| MinReturn            | 200         |
+| MaxReturn            | 200         |
+| StdReturn            | 0           |
+| AverageEpisodeLength | 200         |
+| MinEpisodeLength     | 200         |
+| MaxEpisodeLength     | 200         |
+| StdEpisodeLength     | 0           |
+| TotalNEpisodes       | 516         |
+| TotalNSamples        | 74547       |
+| ExplainedVariance    | 0.34684     |
+--------------------------------------
+[2019-03-22 04:23:55.817593 UTC] Saving snapshot
+[2019-03-22 04:23:55.830117 UTC] Starting iteration 38
+[2019-03-22 04:23:55.831195 UTC] Start collecting samples
+[2019-03-22 04:23:56.230243 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:56.260171 UTC] Computing policy gradient
+[2019-03-22 04:23:56.276996 UTC] Updating baseline
+[2019-03-22 04:23:56.388337 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 38         |
+| SurrLoss             | -0.0013121 |
+| Entropy              | 0.31587    |
+| Perplexity           | 1.3715     |
+| AveragePolicyProb[0] | 0.50385    |
+| AveragePolicyProb[1] | 0.49615    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 523        |
+| TotalNSamples        | 75947      |
+| ExplainedVariance    | 0.40894    |
+-------------------------------------
+[2019-03-22 04:23:57.842189 UTC] Saving snapshot
+[2019-03-22 04:23:57.860343 UTC] Starting iteration 39
+[2019-03-22 04:23:57.861640 UTC] Start collecting samples
+[2019-03-22 04:23:58.298556 UTC] Computing input variables for policy optimization
+[2019-03-22 04:23:58.319284 UTC] Computing policy gradient
+[2019-03-22 04:23:58.330644 UTC] Updating baseline
+[2019-03-22 04:23:58.438488 UTC] Computing logging information
+------------------------------------
+| Iteration            | 39        |
+| SurrLoss             | 0.0071663 |
+| Entropy              | 0.30822   |
+| Perplexity           | 1.361     |
+| AveragePolicyProb[0] | 0.49811   |
+| AveragePolicyProb[1] | 0.50189   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 536       |
+| TotalNSamples        | 78547     |
+| ExplainedVariance    | 0.66646   |
+------------------------------------
+[2019-03-22 04:24:00.416097 UTC] Saving snapshot
+[2019-03-22 04:24:00.434071 UTC] Starting iteration 40
+[2019-03-22 04:24:00.435232 UTC] Start collecting samples
+[2019-03-22 04:24:00.939804 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:00.966158 UTC] Computing policy gradient
+[2019-03-22 04:24:00.980783 UTC] Updating baseline
+[2019-03-22 04:24:01.113316 UTC] Computing logging information
+------------------------------------
+| Iteration            | 40        |
+| SurrLoss             | -0.030162 |
+| Entropy              | 0.30411   |
+| Perplexity           | 1.3554    |
+| AveragePolicyProb[0] | 0.49737   |
+| AveragePolicyProb[1] | 0.50263   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 546       |
+| TotalNSamples        | 80547     |
+| ExplainedVariance    | 0.68225   |
+------------------------------------
+[2019-03-22 04:24:02.685105 UTC] Saving snapshot
+[2019-03-22 04:24:02.700785 UTC] Starting iteration 41
+[2019-03-22 04:24:02.701606 UTC] Start collecting samples
+[2019-03-22 04:24:03.563409 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:03.592199 UTC] Computing policy gradient
+[2019-03-22 04:24:03.608364 UTC] Updating baseline
+[2019-03-22 04:24:03.793215 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 41         |
+| SurrLoss             | -0.0049045 |
+| Entropy              | 0.28288    |
+| Perplexity           | 1.327      |
+| AveragePolicyProb[0] | 0.50398    |
+| AveragePolicyProb[1] | 0.49602    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 555        |
+| TotalNSamples        | 82347      |
+| ExplainedVariance    | 0.75091    |
+-------------------------------------
+[2019-03-22 04:24:06.058498 UTC] Saving snapshot
+[2019-03-22 04:24:06.078485 UTC] Starting iteration 42
+[2019-03-22 04:24:06.080461 UTC] Start collecting samples
+[2019-03-22 04:24:06.801757 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:06.837948 UTC] Computing policy gradient
+[2019-03-22 04:24:06.856321 UTC] Updating baseline
+[2019-03-22 04:24:07.007501 UTC] Computing logging information
+------------------------------------
+| Iteration            | 42        |
+| SurrLoss             | -0.027786 |
+| Entropy              | 0.27214   |
+| Perplexity           | 1.3128    |
+| AveragePolicyProb[0] | 0.50192   |
+| AveragePolicyProb[1] | 0.49808   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 566       |
+| TotalNSamples        | 84547     |
+| ExplainedVariance    | 0.72345   |
+------------------------------------
+[2019-03-22 04:24:09.098761 UTC] Saving snapshot
+[2019-03-22 04:24:09.116073 UTC] Starting iteration 43
+[2019-03-22 04:24:09.117666 UTC] Start collecting samples
+[2019-03-22 04:24:09.724916 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:09.782113 UTC] Computing policy gradient
+[2019-03-22 04:24:09.798330 UTC] Updating baseline
+[2019-03-22 04:24:09.959895 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 43         |
+| SurrLoss             | -0.0074525 |
+| Entropy              | 0.25524    |
+| Perplexity           | 1.2908     |
+| AveragePolicyProb[0] | 0.51533    |
+| AveragePolicyProb[1] | 0.48467    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 574        |
+| TotalNSamples        | 86147      |
+| ExplainedVariance    | 0.70748    |
+-------------------------------------
+[2019-03-22 04:24:11.644699 UTC] Saving snapshot
+[2019-03-22 04:24:11.658644 UTC] Starting iteration 44
+[2019-03-22 04:24:11.660516 UTC] Start collecting samples
+[2019-03-22 04:24:12.153782 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:12.182654 UTC] Computing policy gradient
+[2019-03-22 04:24:12.196533 UTC] Updating baseline
+[2019-03-22 04:24:12.335844 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 44         |
+| SurrLoss             | -0.0053019 |
+| Entropy              | 0.25475    |
+| Perplexity           | 1.2901     |
+| AveragePolicyProb[0] | 0.49169    |
+| AveragePolicyProb[1] | 0.50831    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 586        |
+| TotalNSamples        | 88547      |
+| ExplainedVariance    | 0.76859    |
+-------------------------------------
+[2019-03-22 04:24:13.571825 UTC] Saving snapshot
+[2019-03-22 04:24:13.589494 UTC] Starting iteration 45
+[2019-03-22 04:24:13.590514 UTC] Start collecting samples
+[2019-03-22 04:24:14.077275 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:14.105185 UTC] Computing policy gradient
+[2019-03-22 04:24:14.120279 UTC] Updating baseline
+[2019-03-22 04:24:14.249050 UTC] Computing logging information
+------------------------------------
+| Iteration            | 45        |
+| SurrLoss             | 0.0067177 |
+| Entropy              | 0.24053   |
+| Perplexity           | 1.2719    |
+| AveragePolicyProb[0] | 0.48624   |
+| AveragePolicyProb[1] | 0.51376   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 596       |
+| TotalNSamples        | 90547     |
+| ExplainedVariance    | 0.5881    |
+------------------------------------
+[2019-03-22 04:24:15.920564 UTC] Saving snapshot
+[2019-03-22 04:24:15.938945 UTC] Starting iteration 46
+[2019-03-22 04:24:15.940365 UTC] Start collecting samples
+[2019-03-22 04:24:16.448553 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:16.476428 UTC] Computing policy gradient
+[2019-03-22 04:24:16.496599 UTC] Updating baseline
+[2019-03-22 04:24:16.624949 UTC] Computing logging information
+-----------------------------------
+| Iteration            | 46       |
+| SurrLoss             | 0.011627 |
+| Entropy              | 0.22649  |
+| Perplexity           | 1.2542   |
+| AveragePolicyProb[0] | 0.49282  |
+| AveragePolicyProb[1] | 0.50718  |
+| AverageReturn        | 200      |
+| MinReturn            | 200      |
+| MaxReturn            | 200      |
+| StdReturn            | 0        |
+| AverageEpisodeLength | 200      |
+| MinEpisodeLength     | 200      |
+| MaxEpisodeLength     | 200      |
+| StdEpisodeLength     | 0        |
+| TotalNEpisodes       | 603      |
+| TotalNSamples        | 91947    |
+| ExplainedVariance    | 0.5718   |
+-----------------------------------
+[2019-03-22 04:24:18.229591 UTC] Saving snapshot
+[2019-03-22 04:24:18.246450 UTC] Starting iteration 47
+[2019-03-22 04:24:18.248153 UTC] Start collecting samples
+[2019-03-22 04:24:18.779893 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:18.816774 UTC] Computing policy gradient
+[2019-03-22 04:24:18.832963 UTC] Updating baseline
+[2019-03-22 04:24:18.989297 UTC] Computing logging information
+------------------------------------
+| Iteration            | 47        |
+| SurrLoss             | -0.014987 |
+| Entropy              | 0.22998   |
+| Perplexity           | 1.2586    |
+| AveragePolicyProb[0] | 0.50501   |
+| AveragePolicyProb[1] | 0.49499   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 616       |
+| TotalNSamples        | 94547     |
+| ExplainedVariance    | 0.54344   |
+------------------------------------
+[2019-03-22 04:24:20.708685 UTC] Saving snapshot
+[2019-03-22 04:24:20.725514 UTC] Starting iteration 48
+[2019-03-22 04:24:20.726624 UTC] Start collecting samples
+[2019-03-22 04:24:21.271579 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:21.302674 UTC] Computing policy gradient
+[2019-03-22 04:24:21.321400 UTC] Updating baseline
+[2019-03-22 04:24:21.451966 UTC] Computing logging information
+------------------------------------
+| Iteration            | 48        |
+| SurrLoss             | -0.010523 |
+| Entropy              | 0.21409   |
+| Perplexity           | 1.2387    |
+| AveragePolicyProb[0] | 0.50479   |
+| AveragePolicyProb[1] | 0.49521   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 626       |
+| TotalNSamples        | 96547     |
+| ExplainedVariance    | 0.32926   |
+------------------------------------
+[2019-03-22 04:24:22.929719 UTC] Saving snapshot
+[2019-03-22 04:24:22.952821 UTC] Starting iteration 49
+[2019-03-22 04:24:22.954048 UTC] Start collecting samples
+[2019-03-22 04:24:23.407708 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:23.427835 UTC] Computing policy gradient
+[2019-03-22 04:24:23.443201 UTC] Updating baseline
+[2019-03-22 04:24:23.552112 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 49         |
+| SurrLoss             | -0.0086425 |
+| Entropy              | 0.2175     |
+| Perplexity           | 1.243      |
+| AveragePolicyProb[0] | 0.50145    |
+| AveragePolicyProb[1] | 0.49855    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 635        |
+| TotalNSamples        | 98347      |
+| ExplainedVariance    | 0.19901    |
+-------------------------------------
+[2019-03-22 04:24:25.002025 UTC] Saving snapshot
+[2019-03-22 04:24:25.019137 UTC] Starting iteration 50
+[2019-03-22 04:24:25.020572 UTC] Start collecting samples
+[2019-03-22 04:24:25.455815 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:25.479610 UTC] Computing policy gradient
+[2019-03-22 04:24:25.492065 UTC] Updating baseline
+[2019-03-22 04:24:25.610213 UTC] Computing logging information
+--------------------------------------
+| Iteration            | 50          |
+| SurrLoss             | -0.00082997 |
+| Entropy              | 0.22105     |
+| Perplexity           | 1.2474      |
+| AveragePolicyProb[0] | 0.49701     |
+| AveragePolicyProb[1] | 0.50299     |
+| AverageReturn        | 199.76      |
+| MinReturn            | 176         |
+| MaxReturn            | 200         |
+| StdReturn            | 2.388       |
+| AverageEpisodeLength | 199.76      |
+| MinEpisodeLength     | 176         |
+| MaxEpisodeLength     | 200         |
+| StdEpisodeLength     | 2.388       |
+| TotalNEpisodes       | 646         |
+| TotalNSamples        | 1.0052e+05  |
+| ExplainedVariance    | -0.0023858  |
+--------------------------------------
+[2019-03-22 04:24:26.958567 UTC] Saving snapshot
+[2019-03-22 04:24:26.973005 UTC] Starting iteration 51
+[2019-03-22 04:24:26.974404 UTC] Start collecting samples
+[2019-03-22 04:24:27.363635 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:27.394575 UTC] Computing policy gradient
+[2019-03-22 04:24:27.407885 UTC] Updating baseline
+[2019-03-22 04:24:27.537530 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 51         |
+| SurrLoss             | -0.011369  |
+| Entropy              | 0.22619    |
+| Perplexity           | 1.2538     |
+| AveragePolicyProb[0] | 0.48775    |
+| AveragePolicyProb[1] | 0.51225    |
+| AverageReturn        | 199.76     |
+| MinReturn            | 176        |
+| MaxReturn            | 200        |
+| StdReturn            | 2.388      |
+| AverageEpisodeLength | 199.76     |
+| MinEpisodeLength     | 176        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 2.388      |
+| TotalNEpisodes       | 654        |
+| TotalNSamples        | 1.0212e+05 |
+| ExplainedVariance    | -0.011362  |
+-------------------------------------
+[2019-03-22 04:24:29.515883 UTC] Saving snapshot
+[2019-03-22 04:24:29.535884 UTC] Starting iteration 52
+[2019-03-22 04:24:29.537172 UTC] Start collecting samples
+[2019-03-22 04:24:30.278379 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:30.317350 UTC] Computing policy gradient
+[2019-03-22 04:24:30.336409 UTC] Updating baseline
+[2019-03-22 04:24:30.513296 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 52         |
+| SurrLoss             | 0.0023908  |
+| Entropy              | 0.23333    |
+| Perplexity           | 1.2628     |
+| AveragePolicyProb[0] | 0.50232    |
+| AveragePolicyProb[1] | 0.49768    |
+| AverageReturn        | 199.76     |
+| MinReturn            | 176        |
+| MaxReturn            | 200        |
+| StdReturn            | 2.388      |
+| AverageEpisodeLength | 199.76     |
+| MinEpisodeLength     | 176        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 2.388      |
+| TotalNEpisodes       | 666        |
+| TotalNSamples        | 1.0452e+05 |
+| ExplainedVariance    | 0.14283    |
+-------------------------------------
+[2019-03-22 04:24:32.331568 UTC] Saving snapshot
+[2019-03-22 04:24:32.355096 UTC] Starting iteration 53
+[2019-03-22 04:24:32.356804 UTC] Start collecting samples
+[2019-03-22 04:24:33.016650 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:33.064238 UTC] Computing policy gradient
+[2019-03-22 04:24:33.080721 UTC] Updating baseline
+[2019-03-22 04:24:33.213988 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 53         |
+| SurrLoss             | -0.016679  |
+| Entropy              | 0.24219    |
+| Perplexity           | 1.274      |
+| AveragePolicyProb[0] | 0.50341    |
+| AveragePolicyProb[1] | 0.49659    |
+| AverageReturn        | 199.76     |
+| MinReturn            | 176        |
+| MaxReturn            | 200        |
+| StdReturn            | 2.388      |
+| AverageEpisodeLength | 199.76     |
+| MinEpisodeLength     | 176        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 2.388      |
+| TotalNEpisodes       | 676        |
+| TotalNSamples        | 1.0652e+05 |
+| ExplainedVariance    | 0.24694    |
+-------------------------------------
+[2019-03-22 04:24:35.101872 UTC] Saving snapshot
+[2019-03-22 04:24:35.121855 UTC] Starting iteration 54
+[2019-03-22 04:24:35.123199 UTC] Start collecting samples
+[2019-03-22 04:24:35.624512 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:35.649169 UTC] Computing policy gradient
+[2019-03-22 04:24:35.661131 UTC] Updating baseline
+[2019-03-22 04:24:35.784738 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 54         |
+| SurrLoss             | 0.0033551  |
+| Entropy              | 0.2451     |
+| Perplexity           | 1.2777     |
+| AveragePolicyProb[0] | 0.48315    |
+| AveragePolicyProb[1] | 0.51685    |
+| AverageReturn        | 199.76     |
+| MinReturn            | 176        |
+| MaxReturn            | 200        |
+| StdReturn            | 2.388      |
+| AverageEpisodeLength | 199.76     |
+| MinEpisodeLength     | 176        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 2.388      |
+| TotalNEpisodes       | 684        |
+| TotalNSamples        | 1.0812e+05 |
+| ExplainedVariance    | 0.062209   |
+-------------------------------------
+[2019-03-22 04:24:37.661258 UTC] Saving snapshot
+[2019-03-22 04:24:37.679453 UTC] Starting iteration 55
+[2019-03-22 04:24:37.681280 UTC] Start collecting samples
+[2019-03-22 04:24:38.132877 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:38.154473 UTC] Computing policy gradient
+[2019-03-22 04:24:38.170824 UTC] Updating baseline
+[2019-03-22 04:24:38.271812 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 55         |
+| SurrLoss             | -0.0052999 |
+| Entropy              | 0.25489    |
+| Perplexity           | 1.2903     |
+| AveragePolicyProb[0] | 0.50411    |
+| AveragePolicyProb[1] | 0.49589    |
+| AverageReturn        | 199.76     |
+| MinReturn            | 176        |
+| MaxReturn            | 200        |
+| StdReturn            | 2.388      |
+| AverageEpisodeLength | 199.76     |
+| MinEpisodeLength     | 176        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 2.388      |
+| TotalNEpisodes       | 696        |
+| TotalNSamples        | 1.1052e+05 |
+| ExplainedVariance    | 0.49056    |
+-------------------------------------
+[2019-03-22 04:24:39.949986 UTC] Saving snapshot
+[2019-03-22 04:24:39.989132 UTC] Starting iteration 56
+[2019-03-22 04:24:39.991171 UTC] Start collecting samples
+[2019-03-22 04:24:40.500027 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:40.528056 UTC] Computing policy gradient
+[2019-03-22 04:24:40.540197 UTC] Updating baseline
+[2019-03-22 04:24:40.643124 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 56         |
+| SurrLoss             | 0.018437   |
+| Entropy              | 0.28041    |
+| Perplexity           | 1.3237     |
+| AveragePolicyProb[0] | 0.49425    |
+| AveragePolicyProb[1] | 0.50575    |
+| AverageReturn        | 199.71     |
+| MinReturn            | 176        |
+| MaxReturn            | 200        |
+| StdReturn            | 2.4343     |
+| AverageEpisodeLength | 199.71     |
+| MinEpisodeLength     | 176        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 2.4343     |
+| TotalNEpisodes       | 706        |
+| TotalNSamples        | 1.1252e+05 |
+| ExplainedVariance    | 0.34203    |
+-------------------------------------
+[2019-03-22 04:24:42.784585 UTC] Saving snapshot
+[2019-03-22 04:24:42.807071 UTC] Starting iteration 57
+[2019-03-22 04:24:42.808943 UTC] Start collecting samples
+[2019-03-22 04:24:43.258427 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:43.282071 UTC] Computing policy gradient
+[2019-03-22 04:24:43.294643 UTC] Updating baseline
+[2019-03-22 04:24:43.395001 UTC] Computing logging information
+--------------------------------------
+| Iteration            | 57          |
+| SurrLoss             | -0.00083976 |
+| Entropy              | 0.29841     |
+| Perplexity           | 1.3477      |
+| AveragePolicyProb[0] | 0.50866     |
+| AveragePolicyProb[1] | 0.49134     |
+| AverageReturn        | 199.71      |
+| MinReturn            | 176         |
+| MaxReturn            | 200         |
+| StdReturn            | 2.4343      |
+| AverageEpisodeLength | 199.71      |
+| MinEpisodeLength     | 176         |
+| MaxEpisodeLength     | 200         |
+| StdEpisodeLength     | 2.4343      |
+| TotalNEpisodes       | 715         |
+| TotalNSamples        | 1.1432e+05  |
+| ExplainedVariance    | 0.40076     |
+--------------------------------------
+[2019-03-22 04:24:45.039071 UTC] Saving snapshot
+[2019-03-22 04:24:45.059148 UTC] Starting iteration 58
+[2019-03-22 04:24:45.060759 UTC] Start collecting samples
+[2019-03-22 04:24:45.622537 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:45.650101 UTC] Computing policy gradient
+[2019-03-22 04:24:45.663548 UTC] Updating baseline
+[2019-03-22 04:24:45.766637 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 58         |
+| SurrLoss             | -0.0063144 |
+| Entropy              | 0.31231    |
+| Perplexity           | 1.3666     |
+| AveragePolicyProb[0] | 0.50641    |
+| AveragePolicyProb[1] | 0.49359    |
+| AverageReturn        | 198.73     |
+| MinReturn            | 102        |
+| MaxReturn            | 200        |
+| StdReturn            | 10.022     |
+| AverageEpisodeLength | 198.73     |
+| MinEpisodeLength     | 102        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 10.022     |
+| TotalNEpisodes       | 726        |
+| TotalNSamples        | 1.1642e+05 |
+| ExplainedVariance    | 0.62518    |
+-------------------------------------
+[2019-03-22 04:24:47.590316 UTC] Saving snapshot
+[2019-03-22 04:24:47.608382 UTC] Starting iteration 59
+[2019-03-22 04:24:47.609725 UTC] Start collecting samples
+[2019-03-22 04:24:48.142362 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:48.183679 UTC] Computing policy gradient
+[2019-03-22 04:24:48.198775 UTC] Updating baseline
+[2019-03-22 04:24:48.368371 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 59         |
+| SurrLoss             | -0.020634  |
+| Entropy              | 0.30651    |
+| Perplexity           | 1.3587     |
+| AveragePolicyProb[0] | 0.49604    |
+| AveragePolicyProb[1] | 0.50396    |
+| AverageReturn        | 195.16     |
+| MinReturn            | 79         |
+| MaxReturn            | 200        |
+| StdReturn            | 20.408     |
+| AverageEpisodeLength | 195.16     |
+| MinEpisodeLength     | 79         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 20.408     |
+| TotalNEpisodes       | 739        |
+| TotalNSamples        | 1.1864e+05 |
+| ExplainedVariance    | 0.46137    |
+-------------------------------------
+[2019-03-22 04:24:50.717677 UTC] Saving snapshot
+[2019-03-22 04:24:50.739788 UTC] Starting iteration 60
+[2019-03-22 04:24:50.741316 UTC] Start collecting samples
+[2019-03-22 04:24:51.484703 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:51.524712 UTC] Computing policy gradient
+[2019-03-22 04:24:51.539455 UTC] Updating baseline
+[2019-03-22 04:24:51.665154 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 60         |
+| SurrLoss             | -0.01372   |
+| Entropy              | 0.30205    |
+| Perplexity           | 1.3526     |
+| AveragePolicyProb[0] | 0.52612    |
+| AveragePolicyProb[1] | 0.47388    |
+| AverageReturn        | 173.42     |
+| MinReturn            | 10         |
+| MaxReturn            | 200        |
+| StdReturn            | 52.635     |
+| AverageEpisodeLength | 173.42     |
+| MinEpisodeLength     | 10         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 52.635     |
+| TotalNEpisodes       | 762        |
+| TotalNSamples        | 1.2106e+05 |
+| ExplainedVariance    | 0.45093    |
+-------------------------------------
+[2019-03-22 04:24:53.656028 UTC] Saving snapshot
+[2019-03-22 04:24:53.678066 UTC] Starting iteration 61
+[2019-03-22 04:24:53.679816 UTC] Start collecting samples
+[2019-03-22 04:24:54.209348 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:54.233484 UTC] Computing policy gradient
+[2019-03-22 04:24:54.245327 UTC] Updating baseline
+[2019-03-22 04:24:54.351753 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 61         |
+| SurrLoss             | 0.036156   |
+| Entropy              | 0.29733    |
+| Perplexity           | 1.3463     |
+| AveragePolicyProb[0] | 0.48692    |
+| AveragePolicyProb[1] | 0.51308    |
+| AverageReturn        | 164.61     |
+| MinReturn            | 10         |
+| MaxReturn            | 200        |
+| StdReturn            | 58.465     |
+| AverageEpisodeLength | 164.61     |
+| MinEpisodeLength     | 10         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 58.465     |
+| TotalNEpisodes       | 774        |
+| TotalNSamples        | 1.2258e+05 |
+| ExplainedVariance    | 0.60532    |
+-------------------------------------
+[2019-03-22 04:24:56.613036 UTC] Saving snapshot
+[2019-03-22 04:24:56.631475 UTC] Starting iteration 62
+[2019-03-22 04:24:56.633106 UTC] Start collecting samples
+[2019-03-22 04:24:57.129386 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:57.156522 UTC] Computing policy gradient
+[2019-03-22 04:24:57.168988 UTC] Updating baseline
+[2019-03-22 04:24:57.303502 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 62         |
+| SurrLoss             | 0.016653   |
+| Entropy              | 0.30897    |
+| Perplexity           | 1.362      |
+| AveragePolicyProb[0] | 0.49477    |
+| AveragePolicyProb[1] | 0.50523    |
+| AverageReturn        | 161        |
+| MinReturn            | 10         |
+| MaxReturn            | 200        |
+| StdReturn            | 59.868     |
+| AverageEpisodeLength | 161        |
+| MinEpisodeLength     | 10         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 59.868     |
+| TotalNEpisodes       | 785        |
+| TotalNSamples        | 1.2442e+05 |
+| ExplainedVariance    | 0.64082    |
+-------------------------------------
+[2019-03-22 04:24:59.216743 UTC] Saving snapshot
+[2019-03-22 04:24:59.239842 UTC] Starting iteration 63
+[2019-03-22 04:24:59.241357 UTC] Start collecting samples
+[2019-03-22 04:24:59.849129 UTC] Computing input variables for policy optimization
+[2019-03-22 04:24:59.882249 UTC] Computing policy gradient
+[2019-03-22 04:24:59.898201 UTC] Updating baseline
+[2019-03-22 04:25:00.008408 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 63         |
+| SurrLoss             | -0.029779  |
+| Entropy              | 0.30523    |
+| Perplexity           | 1.3569     |
+| AveragePolicyProb[0] | 0.49969    |
+| AveragePolicyProb[1] | 0.50031    |
+| AverageReturn        | 161        |
+| MinReturn            | 10         |
+| MaxReturn            | 200        |
+| StdReturn            | 59.868     |
+| AverageEpisodeLength | 161        |
+| MinEpisodeLength     | 10         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 59.868     |
+| TotalNEpisodes       | 795        |
+| TotalNSamples        | 1.2642e+05 |
+| ExplainedVariance    | 0.49287    |
+-------------------------------------
+[2019-03-22 04:25:01.881021 UTC] Saving snapshot
+[2019-03-22 04:25:01.900388 UTC] Starting iteration 64
+[2019-03-22 04:25:01.901632 UTC] Start collecting samples
+[2019-03-22 04:25:02.331708 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:02.355678 UTC] Computing policy gradient
+[2019-03-22 04:25:02.369378 UTC] Updating baseline
+[2019-03-22 04:25:02.471602 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 64         |
+| SurrLoss             | -0.042365  |
+| Entropy              | 0.27292    |
+| Perplexity           | 1.3138     |
+| AveragePolicyProb[0] | 0.49309    |
+| AveragePolicyProb[1] | 0.50691    |
+| AverageReturn        | 159.91     |
+| MinReturn            | 10         |
+| MaxReturn            | 200        |
+| StdReturn            | 60.23      |
+| AverageEpisodeLength | 159.91     |
+| MinEpisodeLength     | 10         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 60.23      |
+| TotalNEpisodes       | 806        |
+| TotalNSamples        | 1.2851e+05 |
+| ExplainedVariance    | 0.57957    |
+-------------------------------------
+[2019-03-22 04:25:03.985910 UTC] Saving snapshot
+[2019-03-22 04:25:04.004181 UTC] Starting iteration 65
+[2019-03-22 04:25:04.005154 UTC] Start collecting samples
+[2019-03-22 04:25:04.412089 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:04.431978 UTC] Computing policy gradient
+[2019-03-22 04:25:04.448060 UTC] Updating baseline
+[2019-03-22 04:25:04.554850 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 65         |
+| SurrLoss             | -0.014622  |
+| Entropy              | 0.27492    |
+| Perplexity           | 1.3164     |
+| AveragePolicyProb[0] | 0.50276    |
+| AveragePolicyProb[1] | 0.49724    |
+| AverageReturn        | 159.91     |
+| MinReturn            | 10         |
+| MaxReturn            | 200        |
+| StdReturn            | 60.23      |
+| AverageEpisodeLength | 159.91     |
+| MinEpisodeLength     | 10         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 60.23      |
+| TotalNEpisodes       | 816        |
+| TotalNSamples        | 1.3051e+05 |
+| ExplainedVariance    | 0.44771    |
+-------------------------------------
+[2019-03-22 04:25:06.284681 UTC] Saving snapshot
+[2019-03-22 04:25:06.302197 UTC] Starting iteration 66
+[2019-03-22 04:25:06.303369 UTC] Start collecting samples
+[2019-03-22 04:25:06.676882 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:06.695807 UTC] Computing policy gradient
+[2019-03-22 04:25:06.710834 UTC] Updating baseline
+[2019-03-22 04:25:06.805997 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 66         |
+| SurrLoss             | 0.0054831  |
+| Entropy              | 0.24509    |
+| Perplexity           | 1.2777     |
+| AveragePolicyProb[0] | 0.50967    |
+| AveragePolicyProb[1] | 0.49033    |
+| AverageReturn        | 160.89     |
+| MinReturn            | 10         |
+| MaxReturn            | 200        |
+| StdReturn            | 60.077     |
+| AverageEpisodeLength | 160.89     |
+| MinEpisodeLength     | 10         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 60.077     |
+| TotalNEpisodes       | 824        |
+| TotalNSamples        | 1.3211e+05 |
+| ExplainedVariance    | 0.49788    |
+-------------------------------------
+[2019-03-22 04:25:08.307127 UTC] Saving snapshot
+[2019-03-22 04:25:08.324162 UTC] Starting iteration 67
+[2019-03-22 04:25:08.325196 UTC] Start collecting samples
+[2019-03-22 04:25:08.783680 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:08.806284 UTC] Computing policy gradient
+[2019-03-22 04:25:08.821333 UTC] Updating baseline
+[2019-03-22 04:25:08.916892 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 67         |
+| SurrLoss             | 0.0035144  |
+| Entropy              | 0.21986    |
+| Perplexity           | 1.2459     |
+| AveragePolicyProb[0] | 0.4917     |
+| AveragePolicyProb[1] | 0.5083     |
+| AverageReturn        | 163.08     |
+| MinReturn            | 10         |
+| MaxReturn            | 200        |
+| StdReturn            | 59.961     |
+| AverageEpisodeLength | 163.08     |
+| MinEpisodeLength     | 10         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 59.961     |
+| TotalNEpisodes       | 836        |
+| TotalNSamples        | 1.3451e+05 |
+| ExplainedVariance    | 0.45165    |
+-------------------------------------
+[2019-03-22 04:25:10.448511 UTC] Saving snapshot
+[2019-03-22 04:25:10.461472 UTC] Starting iteration 68
+[2019-03-22 04:25:10.462265 UTC] Start collecting samples
+[2019-03-22 04:25:10.824246 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:10.846885 UTC] Computing policy gradient
+[2019-03-22 04:25:10.858172 UTC] Updating baseline
+[2019-03-22 04:25:10.957613 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 68         |
+| SurrLoss             | -0.0068973 |
+| Entropy              | 0.21405    |
+| Perplexity           | 1.2387     |
+| AveragePolicyProb[0] | 0.50211    |
+| AveragePolicyProb[1] | 0.49789    |
+| AverageReturn        | 169.02     |
+| MinReturn            | 10         |
+| MaxReturn            | 200        |
+| StdReturn            | 57.195     |
+| AverageEpisodeLength | 169.02     |
+| MinEpisodeLength     | 10         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 57.195     |
+| TotalNEpisodes       | 846        |
+| TotalNSamples        | 1.3651e+05 |
+| ExplainedVariance    | 0.23972    |
+-------------------------------------
+[2019-03-22 04:25:12.468085 UTC] Saving snapshot
+[2019-03-22 04:25:12.483405 UTC] Starting iteration 69
+[2019-03-22 04:25:12.484272 UTC] Start collecting samples
+[2019-03-22 04:25:12.852260 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:12.879388 UTC] Computing policy gradient
+[2019-03-22 04:25:12.896546 UTC] Updating baseline
+[2019-03-22 04:25:13.003122 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 69         |
+| SurrLoss             | -0.02254   |
+| Entropy              | 0.19796    |
+| Perplexity           | 1.2189     |
+| AveragePolicyProb[0] | 0.49735    |
+| AveragePolicyProb[1] | 0.50265    |
+| AverageReturn        | 180.09     |
+| MinReturn            | 10         |
+| MaxReturn            | 200        |
+| StdReturn            | 46.629     |
+| AverageEpisodeLength | 180.09     |
+| MinEpisodeLength     | 10         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 46.629     |
+| TotalNEpisodes       | 855        |
+| TotalNSamples        | 1.3831e+05 |
+| ExplainedVariance    | 0.40563    |
+-------------------------------------
+[2019-03-22 04:25:14.432134 UTC] Saving snapshot
+[2019-03-22 04:25:14.449338 UTC] Starting iteration 70
+[2019-03-22 04:25:14.450348 UTC] Start collecting samples
+[2019-03-22 04:25:14.805298 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:14.825924 UTC] Computing policy gradient
+[2019-03-22 04:25:14.836162 UTC] Updating baseline
+[2019-03-22 04:25:14.933654 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 70         |
+| SurrLoss             | -0.0049241 |
+| Entropy              | 0.1846     |
+| Perplexity           | 1.2027     |
+| AveragePolicyProb[0] | 0.50792    |
+| AveragePolicyProb[1] | 0.49208    |
+| AverageReturn        | 190.42     |
+| MinReturn            | 77         |
+| MaxReturn            | 200        |
+| StdReturn            | 31.304     |
+| AverageEpisodeLength | 190.42     |
+| MinEpisodeLength     | 77         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 31.304     |
+| TotalNEpisodes       | 866        |
+| TotalNSamples        | 1.4051e+05 |
+| ExplainedVariance    | 0.30872    |
+-------------------------------------
+[2019-03-22 04:25:16.658465 UTC] Saving snapshot
+[2019-03-22 04:25:16.676129 UTC] Starting iteration 71
+[2019-03-22 04:25:16.677259 UTC] Start collecting samples
+[2019-03-22 04:25:17.067848 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:17.088756 UTC] Computing policy gradient
+[2019-03-22 04:25:17.104931 UTC] Updating baseline
+[2019-03-22 04:25:17.199626 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 71         |
+| SurrLoss             | -0.0010595 |
+| Entropy              | 0.1734     |
+| Perplexity           | 1.1893     |
+| AveragePolicyProb[0] | 0.50826    |
+| AveragePolicyProb[1] | 0.49174    |
+| AverageReturn        | 196.44     |
+| MinReturn            | 77         |
+| MaxReturn            | 200        |
+| StdReturn            | 20.253     |
+| AverageEpisodeLength | 196.44     |
+| MinEpisodeLength     | 77         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 20.253     |
+| TotalNEpisodes       | 875        |
+| TotalNSamples        | 1.4231e+05 |
+| ExplainedVariance    | 0.13737    |
+-------------------------------------
+[2019-03-22 04:25:18.436558 UTC] Saving snapshot
+[2019-03-22 04:25:18.451174 UTC] Starting iteration 72
+[2019-03-22 04:25:18.452326 UTC] Start collecting samples
+[2019-03-22 04:25:18.840140 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:18.861973 UTC] Computing policy gradient
+[2019-03-22 04:25:18.873387 UTC] Updating baseline
+[2019-03-22 04:25:18.970667 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 72         |
+| SurrLoss             | 0.0099286  |
+| Entropy              | 0.1681     |
+| Perplexity           | 1.1831     |
+| AveragePolicyProb[0] | 0.50133    |
+| AveragePolicyProb[1] | 0.49867    |
+| AverageReturn        | 198.86     |
+| MinReturn            | 86         |
+| MaxReturn            | 200        |
+| StdReturn            | 11.343     |
+| AverageEpisodeLength | 198.86     |
+| MinEpisodeLength     | 86         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 11.343     |
+| TotalNEpisodes       | 886        |
+| TotalNSamples        | 1.4451e+05 |
+| ExplainedVariance    | 0.37903    |
+-------------------------------------
+[2019-03-22 04:25:20.116438 UTC] Saving snapshot
+[2019-03-22 04:25:20.132505 UTC] Starting iteration 73
+[2019-03-22 04:25:20.133449 UTC] Start collecting samples
+[2019-03-22 04:25:20.510015 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:20.529381 UTC] Computing policy gradient
+[2019-03-22 04:25:20.539506 UTC] Updating baseline
+[2019-03-22 04:25:20.630129 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 73         |
+| SurrLoss             | 0.0073849  |
+| Entropy              | 0.16239    |
+| Perplexity           | 1.1763     |
+| AveragePolicyProb[0] | 0.51015    |
+| AveragePolicyProb[1] | 0.48985    |
+| AverageReturn        | 198.86     |
+| MinReturn            | 86         |
+| MaxReturn            | 200        |
+| StdReturn            | 11.343     |
+| AverageEpisodeLength | 198.86     |
+| MinEpisodeLength     | 86         |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 11.343     |
+| TotalNEpisodes       | 896        |
+| TotalNSamples        | 1.4651e+05 |
+| ExplainedVariance    | 0.28936    |
+-------------------------------------
+[2019-03-22 04:25:21.811285 UTC] Saving snapshot
+[2019-03-22 04:25:21.825551 UTC] Starting iteration 74
+[2019-03-22 04:25:21.826466 UTC] Start collecting samples
+[2019-03-22 04:25:22.211175 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:22.230026 UTC] Computing policy gradient
+[2019-03-22 04:25:22.241451 UTC] Updating baseline
+[2019-03-22 04:25:22.336293 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 74         |
+| SurrLoss             | 0.0092774  |
+| Entropy              | 0.1603     |
+| Perplexity           | 1.1739     |
+| AveragePolicyProb[0] | 0.50625    |
+| AveragePolicyProb[1] | 0.49375    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 904        |
+| TotalNSamples        | 1.4811e+05 |
+| ExplainedVariance    | 0.19959    |
+-------------------------------------
+[2019-03-22 04:25:23.156691 UTC] Saving snapshot
+[2019-03-22 04:25:23.167837 UTC] Starting iteration 75
+[2019-03-22 04:25:23.168576 UTC] Start collecting samples
+[2019-03-22 04:25:23.571229 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:23.594395 UTC] Computing policy gradient
+[2019-03-22 04:25:23.606381 UTC] Updating baseline
+[2019-03-22 04:25:23.696591 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 75         |
+| SurrLoss             | 0.018947   |
+| Entropy              | 0.16411    |
+| Perplexity           | 1.1783     |
+| AveragePolicyProb[0] | 0.50208    |
+| AveragePolicyProb[1] | 0.49792    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 916        |
+| TotalNSamples        | 1.5051e+05 |
+| ExplainedVariance    | 0.28199    |
+-------------------------------------
+[2019-03-22 04:25:24.984878 UTC] Saving snapshot
+[2019-03-22 04:25:25.000906 UTC] Starting iteration 76
+[2019-03-22 04:25:25.002200 UTC] Start collecting samples
+[2019-03-22 04:25:25.408692 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:25.428583 UTC] Computing policy gradient
+[2019-03-22 04:25:25.444078 UTC] Updating baseline
+[2019-03-22 04:25:25.539641 UTC] Computing logging information
+--------------------------------------
+| Iteration            | 76          |
+| SurrLoss             | -0.00092272 |
+| Entropy              | 0.1382      |
+| Perplexity           | 1.1482      |
+| AveragePolicyProb[0] | 0.50395     |
+| AveragePolicyProb[1] | 0.49605     |
+| AverageReturn        | 200         |
+| MinReturn            | 200         |
+| MaxReturn            | 200         |
+| StdReturn            | 0           |
+| AverageEpisodeLength | 200         |
+| MinEpisodeLength     | 200         |
+| MaxEpisodeLength     | 200         |
+| StdEpisodeLength     | 0           |
+| TotalNEpisodes       | 926         |
+| TotalNSamples        | 1.5251e+05  |
+| ExplainedVariance    | 0.21848     |
+--------------------------------------
+[2019-03-22 04:25:26.794714 UTC] Saving snapshot
+[2019-03-22 04:25:26.809563 UTC] Starting iteration 77
+[2019-03-22 04:25:26.810639 UTC] Start collecting samples
+[2019-03-22 04:25:27.200920 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:27.238291 UTC] Computing policy gradient
+[2019-03-22 04:25:27.254477 UTC] Updating baseline
+[2019-03-22 04:25:27.349425 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 77         |
+| SurrLoss             | -0.017619  |
+| Entropy              | 0.16306    |
+| Perplexity           | 1.1771     |
+| AveragePolicyProb[0] | 0.50161    |
+| AveragePolicyProb[1] | 0.49839    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 935        |
+| TotalNSamples        | 1.5431e+05 |
+| ExplainedVariance    | 0.12342    |
+-------------------------------------
+[2019-03-22 04:25:28.623015 UTC] Saving snapshot
+[2019-03-22 04:25:28.635757 UTC] Starting iteration 78
+[2019-03-22 04:25:28.636357 UTC] Start collecting samples
+[2019-03-22 04:25:29.046033 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:29.066263 UTC] Computing policy gradient
+[2019-03-22 04:25:29.083781 UTC] Updating baseline
+[2019-03-22 04:25:29.190115 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 78         |
+| SurrLoss             | -0.022574  |
+| Entropy              | 0.14086    |
+| Perplexity           | 1.1513     |
+| AveragePolicyProb[0] | 0.49957    |
+| AveragePolicyProb[1] | 0.50043    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 946        |
+| TotalNSamples        | 1.5651e+05 |
+| ExplainedVariance    | 0.048101   |
+-------------------------------------
+[2019-03-22 04:25:30.335394 UTC] Saving snapshot
+[2019-03-22 04:25:30.349978 UTC] Starting iteration 79
+[2019-03-22 04:25:30.351651 UTC] Start collecting samples
+[2019-03-22 04:25:30.758514 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:30.784047 UTC] Computing policy gradient
+[2019-03-22 04:25:30.799897 UTC] Updating baseline
+[2019-03-22 04:25:30.897264 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 79         |
+| SurrLoss             | 0.00057579 |
+| Entropy              | 0.14709    |
+| Perplexity           | 1.1585     |
+| AveragePolicyProb[0] | 0.49811    |
+| AveragePolicyProb[1] | 0.50189    |
+| AverageReturn        | 199.87     |
+| MinReturn            | 187        |
+| MaxReturn            | 200        |
+| StdReturn            | 1.2935     |
+| AverageEpisodeLength | 199.87     |
+| MinEpisodeLength     | 187        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 1.2935     |
+| TotalNEpisodes       | 955        |
+| TotalNSamples        | 1.583e+05  |
+| ExplainedVariance    | 0.49261    |
+-------------------------------------
+[2019-03-22 04:25:32.469094 UTC] Saving snapshot
+[2019-03-22 04:25:32.487241 UTC] Starting iteration 80
+[2019-03-22 04:25:32.488281 UTC] Start collecting samples
+[2019-03-22 04:25:32.909402 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:32.928476 UTC] Computing policy gradient
+[2019-03-22 04:25:32.938213 UTC] Updating baseline
+[2019-03-22 04:25:33.033896 UTC] Computing logging information
+------------------------------------
+| Iteration            | 80        |
+| SurrLoss             | 0.010863  |
+| Entropy              | 0.14035   |
+| Perplexity           | 1.1507    |
+| AveragePolicyProb[0] | 0.49369   |
+| AveragePolicyProb[1] | 0.50631   |
+| AverageReturn        | 199.87    |
+| MinReturn            | 187       |
+| MaxReturn            | 200       |
+| StdReturn            | 1.2935    |
+| AverageEpisodeLength | 199.87    |
+| MinEpisodeLength     | 187       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 1.2935    |
+| TotalNEpisodes       | 966       |
+| TotalNSamples        | 1.605e+05 |
+| ExplainedVariance    | -0.05979  |
+------------------------------------
+[2019-03-22 04:25:34.712667 UTC] Saving snapshot
+[2019-03-22 04:25:34.728678 UTC] Starting iteration 81
+[2019-03-22 04:25:34.729908 UTC] Start collecting samples
+[2019-03-22 04:25:35.097685 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:35.117864 UTC] Computing policy gradient
+[2019-03-22 04:25:35.127941 UTC] Updating baseline
+[2019-03-22 04:25:35.221444 UTC] Computing logging information
+--------------------------------------
+| Iteration            | 81          |
+| SurrLoss             | -0.00041202 |
+| Entropy              | 0.13006     |
+| Perplexity           | 1.1389      |
+| AveragePolicyProb[0] | 0.49619     |
+| AveragePolicyProb[1] | 0.50381     |
+| AverageReturn        | 199.87      |
+| MinReturn            | 187         |
+| MaxReturn            | 200         |
+| StdReturn            | 1.2935      |
+| AverageEpisodeLength | 199.87      |
+| MinEpisodeLength     | 187         |
+| MaxEpisodeLength     | 200         |
+| StdEpisodeLength     | 1.2935      |
+| TotalNEpisodes       | 976         |
+| TotalNSamples        | 1.625e+05   |
+| ExplainedVariance    | 0.18041     |
+--------------------------------------
+[2019-03-22 04:25:36.566432 UTC] Saving snapshot
+[2019-03-22 04:25:36.583290 UTC] Starting iteration 82
+[2019-03-22 04:25:36.584472 UTC] Start collecting samples
+[2019-03-22 04:25:36.983559 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:37.003927 UTC] Computing policy gradient
+[2019-03-22 04:25:37.015530 UTC] Updating baseline
+[2019-03-22 04:25:37.114336 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 82         |
+| SurrLoss             | -0.0018047 |
+| Entropy              | 0.14271    |
+| Perplexity           | 1.1534     |
+| AveragePolicyProb[0] | 0.49808    |
+| AveragePolicyProb[1] | 0.50192    |
+| AverageReturn        | 199.87     |
+| MinReturn            | 187        |
+| MaxReturn            | 200        |
+| StdReturn            | 1.2935     |
+| AverageEpisodeLength | 199.87     |
+| MinEpisodeLength     | 187        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 1.2935     |
+| TotalNEpisodes       | 984        |
+| TotalNSamples        | 1.641e+05  |
+| ExplainedVariance    | 0.30893    |
+-------------------------------------
+[2019-03-22 04:25:38.636457 UTC] Saving snapshot
+[2019-03-22 04:25:38.652305 UTC] Starting iteration 83
+[2019-03-22 04:25:38.653356 UTC] Start collecting samples
+[2019-03-22 04:25:39.104762 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:39.135868 UTC] Computing policy gradient
+[2019-03-22 04:25:39.151006 UTC] Updating baseline
+[2019-03-22 04:25:39.259573 UTC] Computing logging information
+------------------------------------
+| Iteration            | 83        |
+| SurrLoss             | -0.016993 |
+| Entropy              | 0.1344    |
+| Perplexity           | 1.1439    |
+| AveragePolicyProb[0] | 0.49743   |
+| AveragePolicyProb[1] | 0.50257   |
+| AverageReturn        | 199.87    |
+| MinReturn            | 187       |
+| MaxReturn            | 200       |
+| StdReturn            | 1.2935    |
+| AverageEpisodeLength | 199.87    |
+| MinEpisodeLength     | 187       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 1.2935    |
+| TotalNEpisodes       | 996       |
+| TotalNSamples        | 1.665e+05 |
+| ExplainedVariance    | 0.38546   |
+------------------------------------
+[2019-03-22 04:25:40.623006 UTC] Saving snapshot
+[2019-03-22 04:25:40.640450 UTC] Starting iteration 84
+[2019-03-22 04:25:40.641485 UTC] Start collecting samples
+[2019-03-22 04:25:41.034510 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:41.054520 UTC] Computing policy gradient
+[2019-03-22 04:25:41.070871 UTC] Updating baseline
+[2019-03-22 04:25:41.178657 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 84         |
+| SurrLoss             | -0.0053952 |
+| Entropy              | 0.14885    |
+| Perplexity           | 1.1605     |
+| AveragePolicyProb[0] | 0.5069     |
+| AveragePolicyProb[1] | 0.4931     |
+| AverageReturn        | 199.87     |
+| MinReturn            | 187        |
+| MaxReturn            | 200        |
+| StdReturn            | 1.2935     |
+| AverageEpisodeLength | 199.87     |
+| MinEpisodeLength     | 187        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 1.2935     |
+| TotalNEpisodes       | 1006       |
+| TotalNSamples        | 1.685e+05  |
+| ExplainedVariance    | 0.18193    |
+-------------------------------------
+[2019-03-22 04:25:42.800187 UTC] Saving snapshot
+[2019-03-22 04:25:42.818926 UTC] Starting iteration 85
+[2019-03-22 04:25:42.819946 UTC] Start collecting samples
+[2019-03-22 04:25:43.235490 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:43.262839 UTC] Computing policy gradient
+[2019-03-22 04:25:43.279612 UTC] Updating baseline
+[2019-03-22 04:25:43.381574 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 85         |
+| SurrLoss             | -0.0017462 |
+| Entropy              | 0.13637    |
+| Perplexity           | 1.1461     |
+| AveragePolicyProb[0] | 0.50201    |
+| AveragePolicyProb[1] | 0.49799    |
+| AverageReturn        | 199.87     |
+| MinReturn            | 187        |
+| MaxReturn            | 200        |
+| StdReturn            | 1.2935     |
+| AverageEpisodeLength | 199.87     |
+| MinEpisodeLength     | 187        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 1.2935     |
+| TotalNEpisodes       | 1016       |
+| TotalNSamples        | 1.705e+05  |
+| ExplainedVariance    | 0.144      |
+-------------------------------------
+[2019-03-22 04:25:45.019823 UTC] Saving snapshot
+[2019-03-22 04:25:45.034105 UTC] Starting iteration 86
+[2019-03-22 04:25:45.035083 UTC] Start collecting samples
+[2019-03-22 04:25:45.449966 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:45.470675 UTC] Computing policy gradient
+[2019-03-22 04:25:45.486746 UTC] Updating baseline
+[2019-03-22 04:25:45.594159 UTC] Computing logging information
+------------------------------------
+| Iteration            | 86        |
+| SurrLoss             | 0.017789  |
+| Entropy              | 0.13051   |
+| Perplexity           | 1.1394    |
+| AveragePolicyProb[0] | 0.49483   |
+| AveragePolicyProb[1] | 0.50517   |
+| AverageReturn        | 199.87    |
+| MinReturn            | 187       |
+| MaxReturn            | 200       |
+| StdReturn            | 1.2935    |
+| AverageEpisodeLength | 199.87    |
+| MinEpisodeLength     | 187       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 1.2935    |
+| TotalNEpisodes       | 1026      |
+| TotalNSamples        | 1.725e+05 |
+| ExplainedVariance    | 0.34823   |
+------------------------------------
+[2019-03-22 04:25:46.951780 UTC] Saving snapshot
+[2019-03-22 04:25:46.969114 UTC] Starting iteration 87
+[2019-03-22 04:25:46.970232 UTC] Start collecting samples
+[2019-03-22 04:25:47.359859 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:47.379255 UTC] Computing policy gradient
+[2019-03-22 04:25:47.390180 UTC] Updating baseline
+[2019-03-22 04:25:47.486188 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 87         |
+| SurrLoss             | -0.0082962 |
+| Entropy              | 0.15093    |
+| Perplexity           | 1.1629     |
+| AveragePolicyProb[0] | 0.50049    |
+| AveragePolicyProb[1] | 0.49951    |
+| AverageReturn        | 199.87     |
+| MinReturn            | 187        |
+| MaxReturn            | 200        |
+| StdReturn            | 1.2935     |
+| AverageEpisodeLength | 199.87     |
+| MinEpisodeLength     | 187        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 1.2935     |
+| TotalNEpisodes       | 1035       |
+| TotalNSamples        | 1.743e+05  |
+| ExplainedVariance    | 0.26679    |
+-------------------------------------
+[2019-03-22 04:25:48.647277 UTC] Saving snapshot
+[2019-03-22 04:25:48.664834 UTC] Starting iteration 88
+[2019-03-22 04:25:48.665865 UTC] Start collecting samples
+[2019-03-22 04:25:49.100451 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:49.123219 UTC] Computing policy gradient
+[2019-03-22 04:25:49.138986 UTC] Updating baseline
+[2019-03-22 04:25:49.243087 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 88         |
+| SurrLoss             | -0.0019371 |
+| Entropy              | 0.12357    |
+| Perplexity           | 1.1315     |
+| AveragePolicyProb[0] | 0.50211    |
+| AveragePolicyProb[1] | 0.49789    |
+| AverageReturn        | 199.87     |
+| MinReturn            | 187        |
+| MaxReturn            | 200        |
+| StdReturn            | 1.2935     |
+| AverageEpisodeLength | 199.87     |
+| MinEpisodeLength     | 187        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 1.2935     |
+| TotalNEpisodes       | 1046       |
+| TotalNSamples        | 1.765e+05  |
+| ExplainedVariance    | 0.45226    |
+-------------------------------------
+[2019-03-22 04:25:50.491571 UTC] Saving snapshot
+[2019-03-22 04:25:50.505738 UTC] Starting iteration 89
+[2019-03-22 04:25:50.507584 UTC] Start collecting samples
+[2019-03-22 04:25:50.892573 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:50.913327 UTC] Computing policy gradient
+[2019-03-22 04:25:50.925169 UTC] Updating baseline
+[2019-03-22 04:25:51.025820 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 89         |
+| SurrLoss             | -0.0022891 |
+| Entropy              | 0.12797    |
+| Perplexity           | 1.1365     |
+| AveragePolicyProb[0] | 0.5011     |
+| AveragePolicyProb[1] | 0.4989     |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 1056       |
+| TotalNSamples        | 1.785e+05  |
+| ExplainedVariance    | 0.36011    |
+-------------------------------------
+[2019-03-22 04:25:52.232290 UTC] Saving snapshot
+[2019-03-22 04:25:52.247168 UTC] Starting iteration 90
+[2019-03-22 04:25:52.248108 UTC] Start collecting samples
+[2019-03-22 04:25:52.603257 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:52.625280 UTC] Computing policy gradient
+[2019-03-22 04:25:52.637164 UTC] Updating baseline
+[2019-03-22 04:25:52.747039 UTC] Computing logging information
+------------------------------------
+| Iteration            | 90        |
+| SurrLoss             | 0.0035387 |
+| Entropy              | 0.13558   |
+| Perplexity           | 1.1452    |
+| AveragePolicyProb[0] | 0.48611   |
+| AveragePolicyProb[1] | 0.51389   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 1064      |
+| TotalNSamples        | 1.801e+05 |
+| ExplainedVariance    | 0.41078   |
+------------------------------------
+[2019-03-22 04:25:54.020573 UTC] Saving snapshot
+[2019-03-22 04:25:54.036678 UTC] Starting iteration 91
+[2019-03-22 04:25:54.038114 UTC] Start collecting samples
+[2019-03-22 04:25:54.587488 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:54.621940 UTC] Computing policy gradient
+[2019-03-22 04:25:54.635099 UTC] Updating baseline
+[2019-03-22 04:25:54.744618 UTC] Computing logging information
+------------------------------------
+| Iteration            | 91        |
+| SurrLoss             | 0.0049965 |
+| Entropy              | 0.13932   |
+| Perplexity           | 1.1495    |
+| AveragePolicyProb[0] | 0.49698   |
+| AveragePolicyProb[1] | 0.50302   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 1076      |
+| TotalNSamples        | 1.825e+05 |
+| ExplainedVariance    | 0.38474   |
+------------------------------------
+[2019-03-22 04:25:56.690368 UTC] Saving snapshot
+[2019-03-22 04:25:56.709078 UTC] Starting iteration 92
+[2019-03-22 04:25:56.710576 UTC] Start collecting samples
+[2019-03-22 04:25:57.270921 UTC] Computing input variables for policy optimization
+[2019-03-22 04:25:57.306382 UTC] Computing policy gradient
+[2019-03-22 04:25:57.327784 UTC] Updating baseline
+[2019-03-22 04:25:57.502302 UTC] Computing logging information
+------------------------------------
+| Iteration            | 92        |
+| SurrLoss             | 0.01095   |
+| Entropy              | 0.14317   |
+| Perplexity           | 1.1539    |
+| AveragePolicyProb[0] | 0.49859   |
+| AveragePolicyProb[1] | 0.50141   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 1086      |
+| TotalNSamples        | 1.845e+05 |
+| ExplainedVariance    | 0.28754   |
+------------------------------------
+[2019-03-22 04:25:59.740164 UTC] Saving snapshot
+[2019-03-22 04:25:59.758367 UTC] Starting iteration 93
+[2019-03-22 04:25:59.759631 UTC] Start collecting samples
+[2019-03-22 04:26:00.369939 UTC] Computing input variables for policy optimization
+[2019-03-22 04:26:00.409010 UTC] Computing policy gradient
+[2019-03-22 04:26:00.428780 UTC] Updating baseline
+[2019-03-22 04:26:00.571649 UTC] Computing logging information
+------------------------------------
+| Iteration            | 93        |
+| SurrLoss             | 0.0013221 |
+| Entropy              | 0.14322   |
+| Perplexity           | 1.154     |
+| AveragePolicyProb[0] | 0.49633   |
+| AveragePolicyProb[1] | 0.50367   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 1096      |
+| TotalNSamples        | 1.865e+05 |
+| ExplainedVariance    | 0.10854   |
+------------------------------------
+[2019-03-22 04:26:03.409568 UTC] Saving snapshot
+[2019-03-22 04:26:03.443237 UTC] Starting iteration 94
+[2019-03-22 04:26:03.445932 UTC] Start collecting samples
+[2019-03-22 04:26:04.435089 UTC] Computing input variables for policy optimization
+[2019-03-22 04:26:04.476390 UTC] Computing policy gradient
+[2019-03-22 04:26:04.500098 UTC] Updating baseline
+[2019-03-22 04:26:04.724805 UTC] Computing logging information
+------------------------------------
+| Iteration            | 94        |
+| SurrLoss             | 0.0053404 |
+| Entropy              | 0.14455   |
+| Perplexity           | 1.1555    |
+| AveragePolicyProb[0] | 0.50493   |
+| AveragePolicyProb[1] | 0.49507   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 1106      |
+| TotalNSamples        | 1.885e+05 |
+| ExplainedVariance    | 0.18635   |
+------------------------------------
+[2019-03-22 04:26:08.549350 UTC] Saving snapshot
+[2019-03-22 04:26:08.583204 UTC] Starting iteration 95
+[2019-03-22 04:26:08.585939 UTC] Start collecting samples
+[2019-03-22 04:26:09.388031 UTC] Computing input variables for policy optimization
+[2019-03-22 04:26:09.432557 UTC] Computing policy gradient
+[2019-03-22 04:26:09.458932 UTC] Updating baseline
+[2019-03-22 04:26:09.719341 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 95         |
+| SurrLoss             | -0.0010231 |
+| Entropy              | 0.14911    |
+| Perplexity           | 1.1608     |
+| AveragePolicyProb[0] | 0.49761    |
+| AveragePolicyProb[1] | 0.50239    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 1115       |
+| TotalNSamples        | 1.903e+05  |
+| ExplainedVariance    | 0.14244    |
+-------------------------------------
+[2019-03-22 04:26:12.774727 UTC] Saving snapshot
+[2019-03-22 04:26:12.800953 UTC] Starting iteration 96
+[2019-03-22 04:26:12.802901 UTC] Start collecting samples
+[2019-03-22 04:26:13.456887 UTC] Computing input variables for policy optimization
+[2019-03-22 04:26:13.499155 UTC] Computing policy gradient
+[2019-03-22 04:26:13.517018 UTC] Updating baseline
+[2019-03-22 04:26:13.664326 UTC] Computing logging information
+------------------------------------
+| Iteration            | 96        |
+| SurrLoss             | 0.0064334 |
+| Entropy              | 0.15509   |
+| Perplexity           | 1.1678    |
+| AveragePolicyProb[0] | 0.50473   |
+| AveragePolicyProb[1] | 0.49527   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 1126      |
+| TotalNSamples        | 1.925e+05 |
+| ExplainedVariance    | 0.003706  |
+------------------------------------
+[2019-03-22 04:26:16.011947 UTC] Saving snapshot
+[2019-03-22 04:26:16.033310 UTC] Starting iteration 97
+[2019-03-22 04:26:16.034806 UTC] Start collecting samples
+[2019-03-22 04:26:16.638258 UTC] Computing input variables for policy optimization
+[2019-03-22 04:26:16.674837 UTC] Computing policy gradient
+[2019-03-22 04:26:16.694580 UTC] Updating baseline
+[2019-03-22 04:26:16.839997 UTC] Computing logging information
+------------------------------------
+| Iteration            | 97        |
+| SurrLoss             | 0.006279  |
+| Entropy              | 0.16359   |
+| Perplexity           | 1.1777    |
+| AveragePolicyProb[0] | 0.50116   |
+| AveragePolicyProb[1] | 0.49884   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 1136      |
+| TotalNSamples        | 1.945e+05 |
+| ExplainedVariance    | 0.12371   |
+------------------------------------
+[2019-03-22 04:26:19.280616 UTC] Saving snapshot
+[2019-03-22 04:26:19.303627 UTC] Starting iteration 98
+[2019-03-22 04:26:19.305453 UTC] Start collecting samples
+[2019-03-22 04:26:19.917522 UTC] Computing input variables for policy optimization
+[2019-03-22 04:26:19.974483 UTC] Computing policy gradient
+[2019-03-22 04:26:19.996244 UTC] Updating baseline
+[2019-03-22 04:26:20.174335 UTC] Computing logging information
+-------------------------------------
+| Iteration            | 98         |
+| SurrLoss             | -0.0013803 |
+| Entropy              | 0.16212    |
+| Perplexity           | 1.176      |
+| AveragePolicyProb[0] | 0.49454    |
+| AveragePolicyProb[1] | 0.50546    |
+| AverageReturn        | 200        |
+| MinReturn            | 200        |
+| MaxReturn            | 200        |
+| StdReturn            | 0          |
+| AverageEpisodeLength | 200        |
+| MinEpisodeLength     | 200        |
+| MaxEpisodeLength     | 200        |
+| StdEpisodeLength     | 0          |
+| TotalNEpisodes       | 1144       |
+| TotalNSamples        | 1.961e+05  |
+| ExplainedVariance    | 0.049194   |
+-------------------------------------
+[2019-03-22 04:26:22.874229 UTC] Saving snapshot
+[2019-03-22 04:26:22.899664 UTC] Starting iteration 99
+[2019-03-22 04:26:22.901154 UTC] Start collecting samples
+[2019-03-22 04:26:23.554569 UTC] Computing input variables for policy optimization
+[2019-03-22 04:26:23.596022 UTC] Computing policy gradient
+[2019-03-22 04:26:23.616312 UTC] Updating baseline
+[2019-03-22 04:26:23.755009 UTC] Computing logging information
+------------------------------------
+| Iteration            | 99        |
+| SurrLoss             | 0.011677  |
+| Entropy              | 0.16163   |
+| Perplexity           | 1.1754    |
+| AveragePolicyProb[0] | 0.49235   |
+| AveragePolicyProb[1] | 0.50765   |
+| AverageReturn        | 200       |
+| MinReturn            | 200       |
+| MaxReturn            | 200       |
+| StdReturn            | 0         |
+| AverageEpisodeLength | 200       |
+| MinEpisodeLength     | 200       |
+| MaxEpisodeLength     | 200       |
+| StdEpisodeLength     | 0         |
+| TotalNEpisodes       | 1156      |
+| TotalNSamples        | 1.985e+05 |
+| ExplainedVariance    | 0.086646  |
+------------------------------------
+[2019-03-22 04:26:25.422747 UTC] Saving snapshot
